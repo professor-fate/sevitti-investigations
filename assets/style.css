@@ -129,6 +129,15 @@ nav ul li {
 }
 .association-logos {
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.al {
+    width: 20%;
+}
+.al img {
+    width: 100%;
 }
 .case-counts {
     flex: 2;
