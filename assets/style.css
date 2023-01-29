@@ -187,7 +187,54 @@ nav ul li {
     width: 40%;
     left: 15%;
 }
-/**/
+/*Contact Us End*/
+/*Services Page*/
+.sp-display-case {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.sp-heading {
+    width: 100%;
+}
+.sp-service {
+    width: 21%;
+    margin: 3% 0 0;
+    border: solid #29465B 1px;
+}
+/*Services Page End*/
+/*Service Page Template*/
+.st-service {
+    display: flex;
+}
+.st-service-image {
+    width: 40%;
+}
+.st-service-content {
+    width: 60%;
+    padding: 4%;
+}
+.st-service-content h3 {
+    text-align: center;
+    padding: 0 0 3%;
+}
+.st-benefits {
+    display: flex;
+}
+.st-benefits-content {
+    width: 40%;
+    text-align: center;
+    margin: 0 0 4%;
+}
+.st-benefits-content h3 {
+    margin: 0 0 2%;
+}
+.st-benefits-content ul li {
+    line-height: 2;
+}
+/*Service Page Template End*/
 /*Footer*/
 footer {
     background-color: #B7C9E2;
