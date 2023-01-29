@@ -8,83 +8,85 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    <header>
-        <div class="top-header">
-            <img src="./assets/images/SI_Logo_BG_White.png">
-            <div class="contact-info">
-                <div>
-                    <h1>Address:</h1>
-                    <p>8 King Street West Suite 101,
-                        <br>Stoney Creek, Ontario,
-                        <br>L8G 1G8
-                    </p>
-                </div>
-                <div>
-                    <h1>Phone Number:</h2>
-                    <p>
-                        905-664-4449
-                    </p>
-                </div>
-                <div>
-                    <h1>Follow Us:</h1>
-                    <ul>
-                        <li>
-                            <img src="./assets/images/facebook.png">
-                        </li>
-                        <li>
-                            <img src="./assets/images/twitter.png">
-                        </li>
-                        <li>
-                            <img src="./assets/images/linkedin.png">
-                        </li>
-                    </ul>
-                </div>
+    <header> 
+        <a class="logo" href="#"><img src="./assets/images/SI_Logo_BG_White.png" alt="" /></a>
+        <div class="contact-info">
+            <div>
+                <h1>Address:</h1>
+                <p>8 King Street West Suite 101,
+                    <br>Stoney Creek, Ontario,
+                    <br>L8G 1G8
+                </p>
+            </div>
+            <div>
+                <h1>Phone Number:</h2>
+                <p class="contact-info-phone">
+                    905-664-4449
+                </p>
+            </div>
+            <div>
+                <h1>Follow Us:</h1>
+                <ul>
+                    <li>
+                        <a href="#"><img src="./assets/images/facebook.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/twitter.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/linkedin.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    Home
-                </li>
-                <li>
-                    Services
-                </li>
-                <li>
-                    Blog
-                </li>
-                <li>
-                    FAQ
-                </li>
-                <li>
-                    Careers
-                </li>
-                <li>
-                    Contact Us
-                </li>
-            </ul>
-            <h3>Book Your Free Consultation</h3>
-            <h3 class="phone">905-664-4449</h3>
-        </nav>
     </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#blog">Blog</a>
+            </li>
+            <li>
+                <a href="#faq">FAQ</a>
+            </li>
+            <li>
+                <a href="#careers">Careers</a>
+            </li>
+            <li>
+                <a href="#contact-us">Contact Us</a>
+            </li>
+        </ul>
+        <h3>
+            <a href="book-consultation">Book Your Free Consultation</a>
+        </h3>
+        <h3 class="phone">905-664-4449</h3>
+    </nav>
     <main>
         <section class="hero">
-            <h1>Get Started with Sevitti Investigations</h1>
-            <button>Fill out application</button>
+            <div class="hero-cta">
+                <h1>Get Started with Sevitti Investigations</h1>
+                <button>Fill out application</button>
+            </div>
         </section>
         <section class="services">
-            <div>
+            <div class="service">
                 <h1>Service 1</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur.
                 </p>
             </div>
-            <div>
+            <div class="service">
                 <h1>Service 2</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur.
                 </p>
             </div>
-            <div>
+            <div class="service">
                 <h1>Service 3</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur.
@@ -92,32 +94,63 @@
             </div>
         </section>
         <section class="supporting-info">
-            <div>
+            <div class="supporting-info-heading">
                 <h1>
                     Heading
                 </h1>
             </div>
-            <div>
+            <div class="supporting-info-subheading">
                 <h2>sub heading</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, eaque, aperiam voluptate nulla numquam beatae rerum, pariatur delectus mollitia quam porro.</p>
             </div>
         </section>
         <section class="vanity-metrics">
-            <div>
-                <h2>##</h2>
-                <h3>Cases Completed</h3>
-            </div>
-            <div>
-                <h2>##</h2>
-                <h3>Businesses Supported</h3>
-            </div>
-            <div>
-                <h2>##</h2>
-                <h3>Individuals Helped</h3>
+            <div class="association-logos"></div>
+            <div class="case-counts">
+                <div class="cases-completed">
+                    <h2>##</h2>
+                    <h3>Cases Completed</h3>
+                </div>
+                <div class="businesses-supported">
+                    <h2>##</h2>
+                    <h3>Businesses Supported</h3>
+                </div>
+                <div class="individuals-helped">
+                    <h2>##</h2>
+                    <h3>Individuals Helped</h3>
+                </div>
             </div>
         </section>
-        <section class="who-we-help"></section>
-        <section class="contact-us"></section>
+        <section class="who-we-help">
+            <div class="who-we-help-header">
+                <h2>Who We Help</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est modi ipsam qui tenetur at a assumenda facilis ea saepe magni fugit, dignissimos natus provident velit quae nobis? Ea, tempora optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio, quae maxime deserunt nisi corrupti harum doloremque asperiores sit suscipit ullam libero similique placeat architecto et quos! Unde, perspiciatis nesciunt.</p>
+            </div>
+            <div class="who-we-help-cards">
+                <div class="wwh-individuals">
+                    <h3>Individuals</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint provident aperiam odio enim consectetur tempore eaque. Animi sint, culpa distinctio sunt officia libero perspiciatis at harum optio nostrum, accusamus adipisci.</p>
+                    <p class="wwh-link"><a href="#">webpage</a></p>
+                </div>
+                <div class="wwh-businesses">
+                    <h3>Businesses</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae consectetur, illum voluptatem aliquid adipisci magnam hic autem a non velit vero. Doloremque, at amet accusamus doloribus minima a aperiam.</p>
+                    <p class="wwh-link"><a href="#">webpage</a></p>
+                </div>
+                <div class="wwh-lawfirms">
+                    <h3>Law Firms</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit libero facilis ipsa eveniet qui dolorum quisquam consequuntur dolores accusantium omnis dicta, iste blanditiis iusto modi. Quod molestias odit aliquid nihil!</p>
+                    <p class="wwh-link"><a href="#">webpage</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="contact-us-content">
+                <h2>Subhead for getting in touch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores perferendis pariatur vero, molestiae dicta reprehenderit laboriosam modi quaerat minus facilis aliquid. Eveniet possimus quidem saepe iste eligendi debitis eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, quis rem. Repudiandae voluptates tempora debitis distinctio omnis eligendi, aliquam repellendus iste possimus autem, commodi vero aspernatur veritatis reiciendis molestiae esse?</p>
+                <button>Get in touch with us</button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="top">
@@ -127,10 +160,9 @@
         </div>
         <div class="bottom">
             <p>905-664-4449</p>
-            <p>info@sevittiinvestigations.ca</p>
-            <p>Facebook | LinkedIn</p>
+            <p><a href="mailto:info@sevittiinvestigations.ca">info@sevittiinvestigations.ca</a></p>
+            <p><a href="#">facebook</a> | <a href="#">LinkedIn</a></p>
         </div>
-    </footer>
-    
+    </footer> 
 </body>
 </html>

@@ -11,36 +11,39 @@ header {
     display: flex;
     flex-wrap: wrap;
     color: #f77703;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
 }
 header img {
-    width: 15%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.top-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
 }
 .contact-info {
+    width: 60%;
     display:flex;
     flex-wrap: wrap;
     margin: 4%;
     justify-content: space-between;
-    width: 60%
+    font-size: 20px;
 }
 .contact-info h1 {
     padding: 0 0 2%;
+    font-size: 30px;
 }
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: space-between;
 }
 .contact-info ul li img {
     width: 80%;
 }
+/*Header End*/
+/*Nav*/
 nav {
     justify-content: space-around;
     background-color: #f77703;
@@ -50,19 +53,19 @@ nav {
     width: 100%;
     padding: 1% 0;
 }
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     width: 60%;
 }
-header nav ul li {
+nav ul li {
     padding: 0 2%;
 }
 .phone {
     padding: 0 3% 0 0;
 }
-/*Header End*/
+/*Nav End*/
 /*Hero*/
 .hero {
     background-image: url('./images/hero-image.jpg');
@@ -72,7 +75,119 @@ header nav ul li {
     flex-wrap: wrap;
     padding:20%;
 }
+.hero-cta {
+    justify-content: center;
+    width: 33%;
+    position: relative;
+    left: -40%;
+}
+.hero-cta button {
+    width: 100%;
+    color: #29465B;
+    background: #f77703;
+    padding: 15px 0;
+    font-size: 20px;
+}
 /*Hero End*/
+/*Services*/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.service {
+    flex: 1;
+    padding: 20px 0;
+}
+.service h1 {
+    text-align: center;
+}
+.service p {
+    text-align: center;
+}
+.supporting-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+    text-align: center;
+}
+.supporting-info-heading {
+    flex: 1;
+    margin: 0 20px;
+}
+.supporting-info-subheading {
+    flex: 2;
+    margin: 0 20px;
+}
+/*Services End*/
+/*Vanity Metrics*/
+.vanity-metrics {
+    display: flex;
+    flex-wrap: wrap;
+}
+.association-logos {
+    flex: 1;
+}
+.case-counts {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.cases-completed {
+    flex: 1;
+}
+.businesses-supported {
+    flex: 1;
+}
+.individuals-helped {
+    flex: 1;
+}
+/*Vanity Metrics End*/
+/*Who We Help*/
+.who-we-help {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 30px 0;
+}
+.who-we-help-header {
+    width: 100%;
+}
+.who-we-help-header p {
+    margin: 20px 50px;
+}
+.who-we-help-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.wwh-individuals {
+    width: 20%;
+}
+.wwh-businesses {
+    width: 20%;
+}
+.wwh-lawfirms {
+    width: 20%;
+}
+.wwh-link {
+    margin: 20px 0 0;
+}
+/*Who We Help End*/
+/*Contact Us*/
+.contact-us {
+    justify-content: center;
+    display: flex;
+}
+.contact-us-content {
+    position: relative;
+    width: 40%;
+    left: 15%;
+}
+/**/
 /*Footer*/
 footer {
     background-color: #B7C9E2;
