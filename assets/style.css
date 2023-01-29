@@ -243,6 +243,9 @@ footer {
     flex-wrap: wrap;
     padding: 0 2.5% 2%;
 }
+.logo-footer {
+    width: 5%;
+}
 .top {
     display: flex;
     flex-wrap: wrap;
@@ -253,7 +256,7 @@ footer {
     border-color: #29465B;
 }
 .top img {
-    width: 5%;
+    width: 100%;
 }
 .bottom {
     padding: 2% 0 0;
