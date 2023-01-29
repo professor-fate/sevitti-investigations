@@ -243,6 +243,9 @@ footer {
     flex-wrap: wrap;
     padding: 0 2.5% 2%;
 }
+.top img {
+    width: 100%;
+}
 .logo-footer {
     width: 5%;
 }
@@ -254,9 +257,6 @@ footer {
     align-items: center;
     border-bottom: 3px solid;
     border-color: #29465B;
-}
-.top img {
-    width: 100%;
 }
 .bottom {
     padding: 2% 0 0;
