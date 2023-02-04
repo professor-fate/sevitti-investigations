@@ -2,24 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
   }
+a {
+    color: inherit;
+}
 /*Header*/
 header {
     display: flex;
     flex-wrap: wrap;
     color: #f77703;
     justify-content: space-between;
+    align-items: center;
+    margin: 30px 50px 10px;
 }
 .logo {
     display: flex;
     flex-wrap: wrap;
     width: 15%;
+    height: 75%;
 }
 header img {
     width: 100%;
+}
+.hl-icon {
+    width: 15%;
+}
+.hp-icon {
+    width: 20%;
+}
+header div a {
+    display: flex;
+}
+header p {
+    align-items: center;
+    color: #f77703;
+    font-size: 18px;
+    font-weight: bold;
+    ;
 }
 .contact-info {
     width: 60%;
@@ -27,37 +50,52 @@ header img {
     flex-wrap: wrap;
     margin: 4%;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 15px;
+    margin: 0;
 }
-.contact-info h1 {
-    padding: 0 0 2%;
-    font-size: 30px;
+.contact-info-phone{
+    padding: 0.5lh 0;
 }
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    justify-content: space-between;
 }
+
 .contact-info ul li img {
     width: 80%;
 }
 /*Header End*/
 /*Nav*/
 nav {
-    justify-content: space-around;
-    background-color: #f77703;
-    color:white;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 1% 0;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.nav-left {
+    color: white;
+    width: 60%;
+    background-color: #f77703;
+    display: flex;
+    padding: .5% 0;
+    align-items: center;
+}
+.nav-right {
+    color:#f77703;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #111111;
+    align-items: center;
+    padding: .5% 0;
 }
 nav ul {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
 }
 nav ul li {
     padding: 0 2%;
@@ -77,16 +115,30 @@ nav ul li {
 }
 .hero-cta {
     justify-content: center;
-    width: 33%;
+    width: 100%;
     position: relative;
-    left: -40%;
+    left: -20%;
+    color: white;
+}
+.hero h1 {
+    width:100%;
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+.hero p {
+    font-size: 25px;
+}
+.hero-cta-content {
+    width: 60%;
 }
 .hero-cta button {
-    width: 100%;
-    color: #29465B;
+    margin: 30px 0 0;
+    width: 60%;
+    color: white;
     background: #f77703;
     padding: 15px 0;
     font-size: 20px;
+    font-weight: bold;
 }
 /*Hero End*/
 /*Services*/
@@ -106,6 +158,15 @@ nav ul li {
 }
 .service p {
     text-align: center;
+}
+.service-1 {
+    background-color: #dc995a;
+}
+.service-2 {
+    background-color: #;
+}
+.service-3 {
+    background-color: #;
 }
 .supporting-info {
     display: flex;
@@ -145,13 +206,7 @@ nav ul li {
     flex-wrap: wrap;
     text-align: center;
 }
-.cases-completed {
-    flex: 1;
-}
-.businesses-supported {
-    flex: 1;
-}
-.individuals-helped {
+.case-counts div {
     flex: 1;
 }
 /*Vanity Metrics End*/
@@ -173,13 +228,7 @@ nav ul li {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.wwh-individuals {
-    width: 20%;
-}
-.wwh-businesses {
-    width: 20%;
-}
-.wwh-lawfirms {
+.who-we-help-cards div {
     width: 20%;
 }
 .wwh-link {
@@ -252,26 +301,21 @@ footer {
     flex-wrap: wrap;
     padding: 0 2.5% 2%;
 }
-.top img {
-    width: 100%;
-}
-.logo-footer {
-    width: 5%;
-}
-.top {
+.top-bottom {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid;
-    border-color: #29465B;
 }
-.bottom {
-    padding: 2% 0 0;
-    display: flex;
-    flex-wrap: wrap;
+.top-bottom img {
     width: 100%;
-    justify-content: space-between;
+}
+.logo-footer {
+    width: 5%;
+}
+.footer-border {
+    border-bottom: 3px solid #29465B;
+    margin: 0 0 2%;
 }
 /*Footer End*/
