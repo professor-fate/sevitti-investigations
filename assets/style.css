@@ -163,10 +163,10 @@ nav ul li {
     background-color: #dc995a;
 }
 .service-2 {
-    background-color: #;
+    background-color: #a3a3a3;
 }
 .service-3 {
-    background-color: #;
+    background-color: #f6b448;
 }
 .supporting-info {
     display: flex;
@@ -187,12 +187,16 @@ nav ul li {
 .vanity-metrics {
     display: flex;
     flex-wrap: wrap;
+    background-color: #d9d9d9;
+    margin: 70px 0;
 }
 .association-logos {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: none;
+    align-items: center;
 }
 .al {
     width: 20%;
@@ -205,6 +209,10 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    align-items: center;
+}
+.case-counts h2 {
+    font-size: 40px;
 }
 .case-counts div {
     flex: 1;
@@ -221,7 +229,7 @@ nav ul li {
     width: 100%;
 }
 .who-we-help-header p {
-    margin: 20px 50px;
+    margin: 20px 50px 50px;
 }
 .who-we-help-cards {
     display: flex;
@@ -239,6 +247,7 @@ nav ul li {
 .contact-us {
     justify-content: center;
     display: flex;
+    margin: 0 0 30px;
 }
 .contact-us-content {
     position: relative;
@@ -312,10 +321,24 @@ footer {
     width: 100%;
 }
 .logo-footer {
-    width: 5%;
+    width: 10%;
 }
 .footer-border {
     border-bottom: 3px solid #29465B;
     margin: 0 0 2%;
+    padding: 1% 0;
+}
+.ft-left {
+    margin: 0 20% 0 0;
+}
+.fb-left {
+    width: 30%;
+}
+.f-center {
+    margin: 0 auto;
+}
+.f-right {
+    width: 30%;
+    text-align: right;
 }
 /*Footer End*/
