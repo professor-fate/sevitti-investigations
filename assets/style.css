@@ -304,10 +304,8 @@ nav ul li {
 /*Service Page Template End*/
 /*Footer*/
 footer {
-    background-color: #B7C9E2;
+    background-color: #d9d9d9;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     padding: 0 2.5% 2%;
 }
 .top-bottom {
@@ -324,7 +322,7 @@ footer {
     width: 10%;
 }
 .footer-border {
-    border-bottom: 3px solid #29465B;
+    border-bottom: 3px solid #f77703;
     margin: 0 0 2%;
     padding: 1% 0;
 }
