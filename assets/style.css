@@ -340,8 +340,6 @@ footer {
     width: 100%;
     padding: 0 2.5% 2%;
     color: #f77703;
-    position: fixed;
-    bottom: 0;
 }
 .top-bottom {
     display: flex;
