@@ -16,8 +16,8 @@ header {
     flex-wrap: wrap;
     color: #f77703;
     justify-content: space-between;
-    align-items: center;
-    margin: 30px 50px 10px;
+    align-items: flex-start;
+    margin: 30px 2vw 10px;
 }
 .logo {
     display: flex;
@@ -28,11 +28,8 @@ header {
 header img {
     width: 100%;
 }
-.hl-icon {
+.ci-icon {
     width: 15%;
-}
-.hp-icon {
-    width: 20%;
 }
 header div a {
     display: flex;
@@ -40,7 +37,7 @@ header div a {
 header p {
     align-items: center;
     color: #f77703;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: bold;
     ;
 }
@@ -49,20 +46,22 @@ header p {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 15px;
     margin: 0;
 }
-.contact-info-phone {
-    padding: 0.5lh 0;
+.contact-info div {
+    width: 33%;
 }
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    justify-content: space-between;
 }
 .contact-info ul li {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 33%;
 }
 .contact-info ul li a {
     width: 55%;
@@ -75,17 +74,14 @@ header p {
 nav {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    background-color: #f77703;
     margin: 0;
-    font-size: 20px;
+    font-size: 1.2vw;
+    align-items: center;
 }
 .nav-left {
     color: white;
     width: 60%;
-    background-color: #f77703;
-    display: flex;
-    padding: 0;
-    align-items: center;
 }
 .nav-right {
     color:#f77703;
@@ -93,24 +89,16 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: #111111;
-    align-items: center;
-    padding: 0;
 }
 nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-nav ul li {
-    padding: 0.5% 2%;
-}
-nav ul li:hover {
-    background-color: 
-    #880808;
-}
-.phone {
-    padding: 0 3% 0 0;
+nav ul li a {
+    padding: 10px 0;
 }
 .dropdown {
     position: relative;
@@ -120,14 +108,16 @@ nav ul li:hover {
     display: none;
     position: absolute;
     z-index: 1;
-    padding: 10px 0;
-    left: -1%;
-    width: 103%;
+    left: -9%;
+    width: 150%;
+    margin: .1vw 0 0;
+    background-color: #f7770300;
 }
 .dropdown-content a {
     display: block;
     padding: 7px 10px;
     background-color: #f77703;
+    font-size: 1.1vw;;
 }
 .dropdown-content a:hover {
     background-color: #880808;
@@ -373,3 +363,96 @@ footer {
     text-align: right;
 }
 /*Footer End*/
+/*Media Queries for smaller desktop screens*/
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+    }
+    .logo {
+        margin: 0 0 30px 10%;
+        width: 30%;
+    }
+    header p {
+        font-size: 2vw;
+    }
+    .contact-info {
+        width: 100%;
+    }
+    nav {
+        font-size: 2vw;
+    }
+    .nav-left {
+        width: 70%;
+    }
+    .nav-right {
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nav-right h3 {
+        text-align: center;
+        font-size: 1.8vw;
+        width: 100%;
+    }
+    .dropdown-content {
+        margin: 0.9vw 0 0;
+    }
+    .dropdown-content a {
+        font-size: 1.7vw;
+    }
+}
+/*Media Queries for smaller desktop screens end*/
+/*Media Queries for tablets*/
+@media screen and (max-width:768px) {
+
+}
+/*Media Queries for tablets end*/
+/*Media Queries for mobile phones*/
+@media screen and (max-width: 575px) {
+    body {
+        margin: 0 5px;
+    }
+    .logo {
+        margin: 0 0 30px 10%;
+        width: 50%;
+    }
+    header p {
+        font-size: 2.9vw;
+    }
+    .contact-info {
+        justify-content: center;
+    }
+    .contact-info div {
+        margin: 10px 0;
+        width: 50%;
+    }
+    .loc {
+        order: 2;
+    }
+    .pho {
+        order: 1;
+    }
+    .smi {
+        order: 3;
+    }
+    .nav-left {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .nav-right {
+        width: 100%;
+    }
+    .nav-right h3 {
+        padding: 1.5vw 0;
+        width: 50%;
+        font-size: 3vw;
+    }
+    
+    .dropdown-content {
+        margin: 0.03vw 0 0 0;
+    }
+    .dropdown-content a {
+        font-size: 2.5vw;
+    }
+}
+/*Media Queries for mobile phones end*/
