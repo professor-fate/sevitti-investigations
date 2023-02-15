@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style-type: none;
 }
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -277,7 +278,7 @@ nav ul li a {
     left: 15%;
 }
 /*Contact Us End*/
-/*Services Page*/
+/*Capabilities Page*/
 .cp-display-case {
     display: flex;
     flex-wrap: wrap;
@@ -293,8 +294,8 @@ nav ul li a {
     margin: 3% 0 0;
     border: solid #29465B 1px;
 }
-/*Services Page End*/
-/*Service Page Template*/
+/*Capabilities Page End*/
+/*Capability Page Template*/
 .st-service {
     display: flex;
 }
@@ -323,7 +324,7 @@ nav ul li a {
 .st-benefits-content ul li {
     line-height: 2;
 }
-/*Service Page Template End*/
+/*Capability Page Template End*/
 /*Footer*/
 footer {
     background-color: #d9d9d9;
@@ -400,11 +401,23 @@ footer {
     .dropdown-content a {
         font-size: 1.7vw;
     }
+    .cp-capability {
+        width: 30%;
+        margin: 15px auto;
+    }
 }
 /*Media Queries for smaller desktop screens end*/
 /*Media Queries for tablets*/
 @media screen and (max-width:768px) {
-
+    .cp-capability {
+        width: 45%;
+        margin: 15px auto;
+    }
+    .contact-us-content {
+        position: relative;
+        width: 90%;
+        left: 0%;
+    }
 }
 /*Media Queries for tablets end*/
 /*Media Queries for mobile phones*/
@@ -471,6 +484,9 @@ footer {
         text-align: right;
         left: 7%;
     }
+    .hero {
+        padding: 10%;
+    }
     .hero-cta {
         left: 0;
         text-align: center;
@@ -494,10 +510,23 @@ footer {
     .who-we-help-cards div {
         width: 80%;
     }
-    .contact-us-content {
-        position: relative;
+    .cp-capability {
+        width: 80%;
+        margin: 15px auto;
+    }
+    .st-service-image {
+        display: none;
+    }
+    .st-service-content {
+        text-align: center;
         width: 90%;
-        left: 0%;
+        padding: 4%;
+        margin: 0 auto;
+    }
+    .st-benefits-content {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 4%;
     }
     footer {
         font-size: 2.9vw;
