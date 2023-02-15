@@ -471,5 +471,44 @@ footer {
         text-align: right;
         left: 7%;
     }
-}
+    .hero-cta {
+        left: 0;
+        text-align: center;
+    }
+    .hero-cta-content {
+        width: 100%;
+    }
+    .hero-cta button {
+        width: 100%;
+    }
+    .capability {
+        flex: 100%;
+        padding: 20px 0;
+    }
+    .al {
+        width: 40%;
+    }
+    .case-counts div {
+        flex: 100%;
+    }
+    .who-we-help-cards div {
+        width: 80%;
+    }
+    .contact-us-content {
+        position: relative;
+        width: 90%;
+        left: 0%;
+    }
+    footer {
+        font-size: 2.9vw;
+    }
+    .logo-footer {
+        width: 20%;
+    }
+    footer p {
+        text-align: center;
+    }
+    .fb-left {
+        text-align: left;
+    }
 /*Media Queries for mobile phones end*/
