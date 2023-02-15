@@ -414,7 +414,6 @@ footer {
     }
     .logo {
         margin: 0 0 30px 10%;
-        width: 50%;
     }
     header p {
         font-size: 2.9vw;
@@ -439,20 +438,38 @@ footer {
         width: 100%;
         font-size: 3vw;
     }
+    .nav-left ul li {
+        width: 33%;
+        text-align: center;
+        font-size: 4.5vw;
+        padding: 5px 0;
+    }
     .nav-right {
-        width: 100%;
+        display: none;
     }
-    .nav-right h3 {
-        padding: 1.5vw 0;
-        width: 50%;
-        font-size: 3vw;
-    }
-    
     .dropdown-content {
-        margin: 0.03vw 0 0 0;
+        margin: 1vw 0 0 0;
     }
     .dropdown-content a {
-        font-size: 2.5vw;
+        font-size: 4vw;
+    }
+    .dcservices {
+        width: 90%;
+        left: 6%;
+    }
+    .dccapabilities {
+        text-align: right;
+        left: -49.7%;
+    }
+    .dcinsights {
+        width: 70%;
+        left: 20%;
+        text-align: left;
+    }
+    .dccontactus {
+        width: 90%;
+        text-align: right;
+        left: 7%;
     }
 }
 /*Media Queries for mobile phones end*/
