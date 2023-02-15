@@ -7,8 +7,23 @@
     <title>sevittiinvestigations</title>
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
-<body>
-    <header> 
+<body id="body">
+    <section class="intake-form" id="intake-form">
+        <img src="./assets/images/SI_Horizontal_clear.png">
+        <h2>Let's Get In Touch</h2>
+        <form>
+            <label for="name">Enter full name:</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+            <label for="email">Enter email address:</label>
+            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+            <label for="phone">Enter a telephone number:</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+            <label for="contact-message">How may we help you?</label>
+            <textarea id="contact-message" placeholder="Description of services you require"></textarea>
+            <button type="submit" id="submit-form">Submit</button>
+        </form>
+    </section>
+    <header id="header"> 
         <a class="logo" href=""><img src="./assets/images/SI_Loko_Header.png" alt="" /></a>
         <div class="contact-info">
             <div class="loc">
@@ -43,7 +58,7 @@
             </div>
         </div>
     </header>
-    <nav>
+    <nav id="nav">
         <div class="nav-left">
             <ul>
                 <li>
@@ -96,12 +111,12 @@
         </div>
         <div class="nav-right">
             <h3>
-                <a href="book-consultation">Book Your Free Consultation</a>
+                <a href="" class="contact-form">Book Your Free Consultation</a>
             </h3>
             <h3 class="phone"><a href="tel:+9056644449">905-664-4449</a></h3>
         </div>
     </nav>
-    <main>
+    <main id="main">
         <section class="hero">
             <div class="hero-cta">
                 <div>
@@ -109,7 +124,7 @@
                 </div>
                 <div class="hero-cta-content">
                     <p>Trusted and discreet support for individuals and businesses across Ontario</p>
-                    <button>Book Your Appointment</button>
+                    <button class="contact-form">Book Your Appointment</button>
                 </div>
             </div>
         </section>
@@ -196,11 +211,11 @@
             <div class="contact-us-content">
                 <h2>Subhead for getting in touch</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolores perferendis pariatur vero, molestiae dicta reprehenderit laboriosam modi quaerat minus facilis aliquid. Eveniet possimus quidem saepe iste eligendi debitis eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, quis rem. Repudiandae voluptates tempora debitis distinctio omnis eligendi, aliquam repellendus iste possimus autem, commodi vero aspernatur veritatis reiciendis molestiae esse?</p>
-                <button>Get in touch with us</button>
+                <button class="contact-form">Get in touch with us</button>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="top-bottom footer-border">
             <p class="logo-footer ft-left"><a href=""><img src="./assets/images/SI_Horizontal_clear.png"></a></p>
             <p class="f-center"><a href="./capabilities.html">capabilities we offer</a></p>
@@ -212,5 +227,6 @@
             <p class="f-right"><a href="https://www.facebook.com/SevittiInvestigations/">facebook</a> | <a href="https://ca.linkedin.com/company/sevitti-investigations">LinkedIn</a></p>
         </div>
     </footer> 
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
