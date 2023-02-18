@@ -1,5 +1,6 @@
 //intake form buttons
 var contactUsButtonEl = document.querySelectorAll(".contact-form");
+var submitIntakeFormEl = document.querySelectorAll("#submit-form");
 
 //DOM elements
 var intakeFormEl = document.querySelector("#intake-form");
@@ -22,3 +23,19 @@ contactUsButtonEl.forEach(contactForm => {
         footerEl.style.display = "none";
     })
 })
+
+//popup submit
+// submitIntakeFormEl.forEach(intakeForm => {
+//     intakeForm.addEventListener("click", function handleClick(event) {
+//         event.preventDefault();
+//         console.log("clicked");
+//         var name = document.getElementById("name").value
+//         console.log(name);
+//         var email = document.getElementById("email").value
+//         console.log(email);
+//         var phone = document.getElementById("phone").value
+//         console.log(phone);
+//         var message = document.getElementById("contact-message").value
+//         console.log(message);
+//     })
+// })
