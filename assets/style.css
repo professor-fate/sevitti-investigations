@@ -50,57 +50,53 @@ header div ul li a img {
 /*Nav*/
 nav {
     display: flex;
-    flex-wrap: wrap;
-    background-color: #f77703;
-    margin: 0;
-    font-size: 1.2vw;
-    align-items: center;
+    font-size: 1.4vw;
 }
 .nav-left {
-    color: white;
     width: 60%;
-}
-.nav-right {
-    color:#f77703;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    background-color: #111111;
-}
-nav ul {
-    width: 100%;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-nav ul li a {
-    padding: 10px 0;
+    background-color: #f77703;
+    align-items: center;
 }
 .dropdown {
     position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    left: -9%;
-    width: 150%;
-    margin: .1vw 0 0;
-    background-color: #f7770300;
-}
-.dropdown-content a {
-    display: block;
-    padding: 7px 10px;
     background-color: #f77703;
-    font-size: 1.1vw;;
+    width: 9.9vw;
+    text-align: center;
+    line-height: 2.5vw;
+    color: #fff;
 }
-.dropdown-content a:hover {
+.dropdown:hover {
     background-color: #880808;
 }
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f77703;
+    min-width: 100%;
+    z-index: 1;
+    line-height: 1.3vw;
+}
+.dropdown-content li {
+    padding: 10px 5px;
+}
+.dropdown-content li:hover {
+    background-color: #880808;
+}
+.nav-right {
+    width: 40%;
+    color:#f77703;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
 }
 /*Nav End*/
 /*Intake Form*/
@@ -405,21 +401,15 @@ footer {
     .nav-left {
         width: 70%;
     }
-    .nav-right {
-        width: 30%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .nav-right h3 {
-        text-align: center;
-        font-size: 1.8vw;
-        width: 100%;
+    .dropdown {
+        width: 16.5%;
+        line-height: 4.6vw;
     }
     .dropdown-content {
-        margin: 0.9vw 0 0;
+        line-height: 2vw;
     }
-    .dropdown-content a {
-        font-size: 1.7vw;
+    .nav-right {
+        width: 30%;
     }
     .cp-capability {
         width: 30%;
@@ -477,38 +467,19 @@ footer {
         width: 100%;
         font-size: 3vw;
     }
-    .nav-left ul li {
-        width: 33%;
-        text-align: center;
-        font-size: 4.5vw;
-        padding: 5px 0;
+    .dropdown {
+        width: 30%;
+        font-size: 5vw;
+        line-height: 7vw;
+        font-weight: bold;
+    }
+    .dropdown-content {
+        font-size: 4.6vw;
+        line-height: 4vw;
+        font-weight: normal;
     }
     .nav-right {
         display: none;
-    }
-    .dropdown-content {
-        margin: 1vw 0 0 0;
-    }
-    .dropdown-content a {
-        font-size: 4vw;
-    }
-    .dcservices {
-        width: 90%;
-        left: 6%;
-    }
-    .dccapabilities {
-        text-align: right;
-        left: -49.7%;
-    }
-    .dcinsights {
-        width: 70%;
-        left: 20%;
-        text-align: left;
-    }
-    .dccontactus {
-        width: 90%;
-        text-align: right;
-        left: 7%;
     }
     .hero {
         padding: 10%;
