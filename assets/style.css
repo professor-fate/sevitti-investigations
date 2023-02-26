@@ -155,16 +155,13 @@ nav {
 .hero {
     background-image: url('./images/hero-image.jpg');
     background-size: cover;
+    background-position: 100% 30%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding:20%;
+    padding: 20%;
+    height: 100px;
 }
 .hero-cta {
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    left: -20%;
     color: white;
 }
 .hero h1 {
@@ -212,7 +209,8 @@ nav {
 .capability p {
     align-items: flex-end;
     text-align: center;
-    margin: 0 3%;
+    margin: 0 17%;
+    font-size: 1vw;
 }
 .capability-1 {
     background-color: #dc995a;
@@ -223,6 +221,8 @@ nav {
 .capability-3 {
     background-color: #f6b448;
 }
+/*Capabilities End*/
+/*Supporting Info*/
 .supporting-info {
     display: flex;
     flex-wrap: wrap;
@@ -232,21 +232,34 @@ nav {
 .supporting-info-heading {
     flex: 1;
     margin: 0 20px;
+    font-size: 1.3vw;
+    display: flex;
+}
+.supporting-info-heading {
+    align-items: center;
 }
 .supporting-info-subheading {
     flex: 2;
     margin: 0 20px;
+    padding: 0 5%;
 }
-/*Capabilities End*/
+.supporting-info-subheading h2 {
+    margin: 0 0 1vw;
+}
+.supporting-info-subheading p {
+    font-size: 1.1vw;
+}
+/*Supporting Info End*/
 /*Vanity Metrics*/
 .vanity-metrics {
     display: flex;
     flex-wrap: wrap;
     background-color: #d9d9d9;
     margin: 70px 0;
+    padding: 0 2%;
 }
 .association-logos {
-    flex: 1;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -260,7 +273,7 @@ nav {
     width: 100%;
 }
 .case-counts {
-    flex: 2;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -280,11 +293,15 @@ nav {
     text-align: center;
     margin: 30px 0;
 }
+.who-we-help h2 {
+    font-size: 2vw;
+}
 .who-we-help-header {
     width: 100%;
 }
 .who-we-help-header p {
     margin: 20px 50px 50px;
+    font-size: 1.5vw;
 }
 .who-we-help-cards {
     display: flex;
@@ -292,37 +309,54 @@ nav {
     justify-content: space-around;
 }
 .who-we-help-cards h3 {
-    text-align: left;
-    width: 70%;
+    text-align: center;
+    margin: 0 0 1vw;
 }
 .who-we-help-cards div {
     width: 20%;
     margin: 0 0 50px;
+    line-height: 1.5;
+    font-size: 0.9vw;
 }
 .who-we-help span {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 0 20px;
 }
 .who-we-help img {
-    width: 10%;
+    width: 20%;
     margin: 0 10px;
-}
-.wwh-link {
-    margin: 20px 0 0;
 }
 /*Who We Help End*/
 /*Contact Us*/
 .contact-us {
     justify-content: center;
     display: flex;
-    margin: 0 0 30px;
+    padding: 6% 0;
+    background-image: url('./images/contactus-onpage-banner.png');
+    background-size: cover;
+    background-position: 0 55%;
+    color: #fff;
 }
 .contact-us-content {
     position: relative;
     width: 40%;
-    left: 15%;
+    left: 23%;
+}
+.contact-us-content h2 {
+    font-size: 2.5vw;
+}
+.contact-us-content p {
+    font-size: 1.3vw;
+}
+.contact-us-content button {
+    margin: 30px 0 0;
+    width: 60%;
+    color: white;
+    background: #f77703;
+    padding: 15px 0;
+    font-size: 1.3vw;
+    font-weight: bold;
 }
 /*Contact Us End*/
 /*Capabilities Page*/
@@ -559,14 +593,16 @@ footer {
         width: 30%;
     }
     footer p {
-        text-align: center;
         width: 100%;
+    }
+    .ft-left {
+        margin: 0 auto;
     }
     .fb-left {
         text-align: left;
     }
     .f-right {
-        margin: 0 0 0 auto;
+        margin: 0 auto;
     }
     .intake-form {
         width: 100%;
