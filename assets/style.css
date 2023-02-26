@@ -189,22 +189,30 @@ nav {
 }
 /*Hero End*/
 /*Capabilities*/
-.capabilities {
+.capabilities-headers, .capabilities-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
     margin: 0 auto;
 }
+.capabilities-headers div {
+    padding: 20px 0 10px;
+}
+.capabilities-content div {
+    padding: 0 0 20px;
+}
 .capability {
+    display: flex;
     flex: 1;
-    padding: 20px 0;
+    justify-content: center;
 }
 .capability h1 {
     text-align: center;
 }
 .capability p {
+    align-items: flex-end;
     text-align: center;
+    margin: 0 3%;
 }
 .capability-1 {
     background-color: #dc995a;
@@ -283,8 +291,23 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.who-we-help-cards h3 {
+    text-align: left;
+    width: 70%;
+}
 .who-we-help-cards div {
     width: 20%;
+    margin: 0 0 50px;
+}
+.who-we-help span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px;
+}
+.who-we-help img {
+    width: 10%;
+    margin: 0 10px;
 }
 .wwh-link {
     margin: 20px 0 0;
