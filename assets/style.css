@@ -237,6 +237,7 @@ nav {
 }
 .supporting-info-heading {
     align-items: center;
+    border-bottom: #f77703 3px solid;
 }
 .supporting-info-subheading {
     flex: 2;
