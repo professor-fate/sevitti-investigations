@@ -102,12 +102,13 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     border: 0;
-    margin-left: 3.5em;
+    margin-left: 5%;
     display: flex;
     background-color: #f77703;
     transform: scale(0, 1);
     transform-origin: left;
     transition: transform 400ms ease-in-out;
+    align-items: center;
 }
 .nav-menu a {
     opacity: 0;
@@ -504,7 +505,7 @@ footer {
         height: 4.6vw;
     }
     .nav-menu {
-        width: 93%;
+        width: 95%;
     }
     .dropdown {
         width: 16.5%;
@@ -512,9 +513,6 @@ footer {
     }
     .dropdown-content {
         line-height: 2vw;
-    }
-    .nav-right {
-        width: 30%;
     }
     .cp-capability {
         width: 30%;
@@ -592,16 +590,19 @@ footer {
 @media screen and (max-width: 575px) {
     nav {
         font-size: 1rem;
-        height: 2.9rem;
+        height: 3.4rem;
+        background-image: linear-gradient(to right, #f77703 15%, black 45%);
     }
     .nav-contact-info {
         font-size: 1.2rem;
     }
     .nav-menu {
-        width: 89%;
+        margin-left: 15%;
+        width: 85%;
     }
     .dropdown {
-        width: 33.3333%;
+        width: 30%;
+        height: 1.7rem;
     }
     .dropdown-content {
         font-size: 1rem;
