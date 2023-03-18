@@ -220,6 +220,9 @@ nav {
     margin: 0 10%;
     padding: 10% 0;
 }
+.hero-cta-capabilities {
+    padding: 3% 0;
+}
 .hero h1 {
     width:100%;
     font-size: 40px;
@@ -413,15 +416,35 @@ nav {
     flex-wrap: wrap;
     text-align: center;
     justify-content: space-between;
-    margin: 0 5%;
+    margin: 2rem 5%;
 }
 .cp-heading {
     width: 100%;
 }
+.cp-heading h2 {
+    width: 60%;
+    border-bottom: #f77703 2px solid;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
 .cp-capability {
     width: 21%;
-    margin: 3% 0 0;
-    border: solid #29465B 1px;
+    margin: 3rem 0 0;
+}
+.cp-capability h4 {
+    font-size: 1.1vw;
+}
+.cp-capability:hover {
+    transform: scale(1.2);
+    transition: 200ms ease-in-out;
+}
+.cp-capability img {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 10px;
+}
+.cp-capability span {
+    width: 21%;
 }
 /*Capabilities Page End*/
 /*Capability Page Template*/
@@ -522,6 +545,12 @@ footer {
         width: 30%;
         margin: 15px auto;
     }
+    .cp-capability h4 {
+        font-size: 1.6vw;
+    }
+    .cp-capability:hover {
+        transform: scale(1.1);
+    }
     .intake-form {
         width: 70%;
     }
@@ -576,6 +605,12 @@ footer {
     .cp-capability {
         width: 45%;
         margin: 15px auto;
+    }
+    .cp-capability h4 {
+        font-size: 2.5vw;
+    }
+    .cp-capability:hover {
+        transform: scale(1);
     }
     .contact-us-content {
         position: relative;
@@ -662,6 +697,12 @@ footer {
     .cp-capability {
         width: 80%;
         margin: 15px auto;
+    }
+    .cp-heading h2 {
+        width: 80%;
+    }
+    .cp-capability h4 {
+        font-size: 4vw;
     }
     .st-service-image {
         display: none;
