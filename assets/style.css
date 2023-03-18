@@ -120,6 +120,7 @@ nav {
     text-align: center;
     line-height: 2.5vw;
     color: #fff;
+    align-items: center;
 }
 .dropdown:hover {
     background-color: black;
@@ -209,6 +210,9 @@ nav {
     background-image: url('./images/hero-image.jpg');
     background-size: cover;
     background-position: center;
+}
+.hero-capabilities {
+    background-image: url('./images/capabilitieshero_all_v1.png');
 }
 .hero-cta {
     color: white;
