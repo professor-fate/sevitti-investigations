@@ -451,14 +451,20 @@ nav {
 .st-service {
     display: flex;
 }
+.st-service, .st-benefits {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
 .st-service-image {
     width: 40%;
+    overflow: hidden;
 }
 .st-service-content {
     width: 60%;
     padding: 4%;
 }
-.st-service-content h3 {
+.st-service h3, .st-benefits h3 {
+    font-size: 1.5rem;
     text-align: center;
     padding: 0 0 3%;
 }
@@ -471,10 +477,24 @@ nav {
     margin: 0 0 4%;
 }
 .st-benefits-content h3 {
-    margin: 0 0 2%;
+    margin: 0 2rem 2%;
+}
+.st-benefits p {
+    margin: 0 2rem;
+    text-align: justify;
+}
+.st-benefits-content ul {
+    margin-top: 2rem;
 }
 .st-benefits-content ul li {
     line-height: 2;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 10%;
+    list-style-type: disc;
+}
+.st-benefits-image {
+    width: 60%;
 }
 /*Capability Page Template End*/
 /*Footer*/
@@ -617,6 +637,20 @@ footer {
         width: 90%;
         left: 0%;
     }
+    .st-service-image {
+        display: none;
+    }
+    .st-service-content {
+        text-align: center;
+        width: 90%;
+        padding: 4%;
+        margin: 0 auto;
+    }
+    .st-benefits-content {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 4%;
+    }
     .who-we-help-cards div {
         width: 80%;
     }
@@ -703,20 +737,6 @@ footer {
     }
     .cp-capability h4 {
         font-size: 4vw;
-    }
-    .st-service-image {
-        display: none;
-    }
-    .st-service-content {
-        text-align: center;
-        width: 90%;
-        padding: 4%;
-        margin: 0 auto;
-    }
-    .st-benefits-content {
-        width: 80%;
-        text-align: center;
-        margin: 0 auto 4%;
     }
     footer {
         font-size: 4vw;
