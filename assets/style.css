@@ -501,9 +501,10 @@ footer {
     }
     nav {
         font-size: 2vw;
+        height: 4.6vw;
     }
-    .nav-left {
-        width: 70%;
+    .nav-menu {
+        width: 93%;
     }
     .dropdown {
         width: 16.5%;
@@ -580,10 +581,6 @@ footer {
 /*Media Queries for tablets end*/
 /*Media Queries for mobile phones*/
 @media screen and (max-width: 575px) {
-    body {
-        margin: 0 5px;
-        font-size: 25px;
-    }
     .hloc {
         display: none;
     }
@@ -593,23 +590,26 @@ footer {
     .hsmi {
         display: none;
     }
-    .nav-left {
-        width: 100%;
-        font-size: 3vw;
+    nav {
+        font-size: 1rem;
+        height: 2.9rem;
+    }
+    .nav-contact-info {
+        font-size: 1.2rem;
+    }
+    .nav-menu {
+        width: 89%;
     }
     .dropdown {
-        width: 30%;
-        font-size: 5vw;
-        line-height: 7vw;
-        font-weight: bold;
+        width: 33.3333%;
     }
     .dropdown-content {
-        font-size: 4.6vw;
-        line-height: 4vw;
+        font-size: 1rem;
         font-weight: normal;
+        line-height: 1;
     }
-    .nav-right {
-        display: none;
+    .dropdown-content a {
+        padding: 10px;
     }
     .hero {
         padding: 10%;
