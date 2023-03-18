@@ -72,47 +72,14 @@ nav {
     transition: opacity 250ms ease-in-out 350ms;
 }
 .nav-toggle-label {
-    margin-left: 1em;
-    display: flex;
-    align-items: center;
-}
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    display: block;
-    background: white;
-    height: 2px;
-    width: 1.5em;
-    border-radius: 2px;
-    position: relative
-}
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-    content: '';
-    position: absolute;
-}
-.nav-toggle-label span::before {
-    bottom: 7px;
-}
-.nav-toggle-label span::after {
-    top: 7px;
+    display: none;
 }
 .nav-menu {
     position: absolute;
     flex-wrap: wrap;
     align-items: center;
-    border: 0;
-    margin-left: 5%;
     display: flex;
-    background-color: #f77703;
-    transform: scale(0, 1);
-    transform-origin: left;
-    transition: transform 400ms ease-in-out;
     align-items: center;
-}
-.nav-menu a {
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
 }
 .dropdown {
     position: relative;
@@ -554,6 +521,9 @@ footer {
     .nav-menu {
         width: 95%;
     }
+    .nav-contact-info {
+        display: none;
+    }
     .dropdown {
         width: 16.5%;
         line-height: 4.6vw;
@@ -611,7 +581,59 @@ footer {
     nav {
         position: relative;
     }
-
+    .nav-toggle:checked ~ .nav-menu {
+        transform: scale(1, 1);
+    }
+    .nav-toggle:checked ~ .nav-menu a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 350ms;
+    }
+    .nav-toggle-label {
+        margin-left: 1em;
+        display: flex;
+        align-items: center;
+    }
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 1.5em;
+        border-radius: 2px;
+        position: relative
+    }
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+    .nav-menu {
+        position: absolute;
+        flex-wrap: wrap;
+        align-items: center;
+        border: 0;
+        margin-left: 5%;
+        display: flex;
+        background-color: #f77703;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform 400ms ease-in-out;
+        align-items: center;
+    }
+    .nav-menu a {
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+    .nav-contact-info {
+        display: flex;
+    }
     .supporting-info-heading{
         flex: unset;
         width: 85%;
