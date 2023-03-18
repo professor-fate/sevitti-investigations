@@ -278,8 +278,6 @@ nav {
     margin: 0 20px;
     font-size: 1.1rem;
     display: flex;
-}
-.supporting-info-heading {
     align-items: center;
     border-bottom: #f77703 3px solid;
 }
@@ -389,10 +387,10 @@ nav {
     left: 23%;
 }
 .contact-us-content h2 {
-    font-size: 2.5vw;
+    font-size: 2.5rem;
 }
 .contact-us-content p {
-    font-size: 1.3vw;
+    font-size: 1.5rem;
 }
 .contact-us-content button {
     margin: 30px 0 0;
@@ -400,7 +398,7 @@ nav {
     color: white;
     background: #f77703;
     padding: 15px 0;
-    font-size: 1.3vw;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 /*Contact Us End*/
@@ -524,6 +522,9 @@ footer {
     .intake-form {
         width: 70%;
     }
+    .contact-us-content button, .hero-cta-content button {
+        width: 100%;
+    }
 }
 /*Media Queries for smaller desktop screens end*/
 /*Media Queries for tablets*/
@@ -549,6 +550,17 @@ footer {
     nav {
         position: relative;
     }
+
+    .supporting-info-heading{
+        flex: unset;
+        width: 85%;
+        padding-bottom: 1rem;
+        margin: 0 auto 1rem;
+    }
+    .supporting-info-subheading{
+        flex: unset;
+    }
+
     .cp-capability {
         width: 45%;
         margin: 15px auto;
@@ -571,6 +583,15 @@ footer {
     body {
         margin: 0 5px;
         font-size: 25px;
+    }
+    .hloc {
+        display: none;
+    }
+    .hpho {
+        display: none;
+    }
+    .hsmi {
+        display: none;
     }
     .nav-left {
         width: 100%;
@@ -596,6 +617,9 @@ footer {
     .hero-cta {
         left: 0;
         text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
     }
     .hero-cta-content {
         width: 100%;
@@ -650,21 +674,21 @@ footer {
     }
     footer {
         font-size: 4vw;
+        text-align: center;
+    }
+    footer div p {
+        margin: 5px 0;
     }
     .logo-footer {
         width: 30%;
-    }
-    footer p {
-        width: 100%;
-    }
-    .ft-left {
         margin: 0 auto;
     }
     .fb-left {
-        text-align: left;
-    }
-    .f-right {
         margin: 0 auto;
+    }
+    .f-center, .f-right {
+        width: 100%;
+        text-align: center;
     }
     .intake-form {
         width: 100%;
