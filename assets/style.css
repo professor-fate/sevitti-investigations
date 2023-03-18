@@ -533,6 +533,15 @@ footer {
     header {
         justify-content: space-around;
     }
+    .hloc {
+        display: none;
+    }
+    .hpho {
+        display: none;
+    }
+    .hsmi {
+        display: none;
+    }
     header div {
         width: 45%;
     }
@@ -581,15 +590,6 @@ footer {
 /*Media Queries for tablets end*/
 /*Media Queries for mobile phones*/
 @media screen and (max-width: 575px) {
-    .hloc {
-        display: none;
-    }
-    .hpho {
-        display: none;
-    }
-    .hsmi {
-        display: none;
-    }
     nav {
         font-size: 1rem;
         height: 2.9rem;
