@@ -494,22 +494,22 @@ nav {
     background-color: #fdcc4a;
 }
 /*FAQ Page Template End*/
-/*About Us Page Template*/
-.about-us {
+/*Text Page Template*/
+.text-page {
     margin: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
 }
-.about-us h2 {
+.text-page h2 {
     margin-top: 3rem;
 }
-.about-us p {
+.text-page p {
     margin: 1rem 1rem 1rem;
 }
-.about-us ul {
+.text-page ul {
     margin: 0 2rem;
 }
-.about-us ul li {
+.text-page ul li {
     list-style-type: disc;
 }
 /*About Us Page Template Ends*/
