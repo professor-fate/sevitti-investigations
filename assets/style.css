@@ -231,13 +231,13 @@ nav {
     margin: 10px 20px 20px;
     font-size: 1.3rem;
 }
-.capability-1 {
+.color-1 {
     background-color: #dc995a;
 }
-.capability-2 {
+.color-2 {
     background-color: #a3a3a3;
 }
-.capability-3 {
+.color-3 {
     background-color: #f6b448;
 }
 /*Capabilities End*/
@@ -457,6 +457,43 @@ nav {
     list-style-type: disc;
 }
 /*Capability Page Template End*/
+/*FAQ Page Template*/
+.faq {
+    margin: 2rem;
+    background-color: #f77703;
+}
+.faq h2 {
+    width: 100%;
+    
+    color: white;
+    padding: 1rem;
+}
+.faq ul li{
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.faq-toggle {
+    display: none;
+}
+.faq-toggle:checked ~ p {
+    display: block;
+}
+.faq-dropdown p {
+    display: none;
+    color: white;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #f77703;
+}
+.color-4 {
+    background-color: #fee196;
+}
+.color-5 {
+    background-color: #fdcc4a;
+}
+/*FAQ Page Template End*/
 /*Footer*/
 footer {
     background-color: #d9d9d9;
@@ -533,6 +570,22 @@ footer {
     }
     .cp-capability:hover {
         transform: scale(1.1);
+    }
+    .st-service, .st-benefits {
+        grid-template-columns: 1fr;
+    }
+    .st-service-image {
+        margin: 0 2rem;
+        order: 1;
+    }
+    .st-service-content {
+        margin: 2rem;
+    }
+    .st-benefits-content {
+        margin: 2rem;
+    }
+    .st-benefits-image {
+        margin: 0 2rem 2rem
     }
     .intake-form {
         width: 70%;
@@ -651,22 +704,6 @@ footer {
         position: relative;
         width: 90%;
         left: 0%;
-    }
-    .st-service, .st-benefits {
-        grid-template-columns: 1fr;
-    }
-    .st-service-image {
-        margin: 0 2rem;
-        order: 1;
-    }
-    .st-service-content {
-        margin: 2rem;
-    }
-    .st-benefits-content {
-        margin: 2rem;
-    }
-    .st-benefits-image {
-        margin: 0 2rem 2rem
     }
     .who-we-help-cards div {
         width: 80%;
