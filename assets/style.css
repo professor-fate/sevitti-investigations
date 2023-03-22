@@ -483,7 +483,7 @@ nav {
     display: none;
     color: white;
     margin: 0.5rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     background-color: #f77703;
 }
@@ -494,6 +494,25 @@ nav {
     background-color: #fdcc4a;
 }
 /*FAQ Page Template End*/
+/*About Us Page Template*/
+.about-us {
+    margin: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.about-us h2 {
+    margin-top: 3rem;
+}
+.about-us p {
+    margin: 1rem 1rem 1rem;
+}
+.about-us ul {
+    margin: 0 2rem;
+}
+.about-us ul li {
+    list-style-type: disc;
+}
+/*About Us Page Template Ends*/
 /*Footer*/
 footer {
     background-color: #d9d9d9;
