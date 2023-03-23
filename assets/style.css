@@ -79,7 +79,6 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-    align-items: center;
 }
 .dropdown {
     position: relative;
@@ -277,7 +276,7 @@ nav {
     padding: 0 2%;
 }
 .association-logos {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -285,13 +284,13 @@ nav {
     align-items: center;
 }
 .al {
-    width: 20%;
+    width: 15%;
 }
 .al img {
     width: 100%;
 }
 .case-counts {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -708,7 +707,12 @@ footer {
     .supporting-info-subheading{
         flex: unset;
     }
-
+    .al {
+        width: 40%;
+    }
+    .case-counts div {
+        flex: 100%;
+    }
     .cp-capability {
         width: 45%;
         margin: 15px auto;
@@ -794,12 +798,6 @@ footer {
     }
     .capabilities a:nth-of-type(6) {
         order: 6;
-    }
-    .al {
-        width: 40%;
-    }
-    .case-counts div {
-        flex: 100%;
     }
     .cp-capability {
         width: 80%;
