@@ -1,0 +1,26 @@
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%
+}
+.blog-entry {
+    margin: 2%;
+    width: 46%;
+}
+.blog-entry img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+.blog-toggle {
+    display: none;
+}
+.blog-toggle:checked + .blog-entry {
+    width: 96%;
+}
+.blog-toggle:checked + .blog-entry p {
+    display:block;
+}
+.blog p {
+    display: none;
+}
