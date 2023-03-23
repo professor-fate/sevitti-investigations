@@ -14,7 +14,6 @@ var footerEl = document.querySelector("#footer");
 contactUsButtonEl.forEach(contactForm => {
     contactForm.addEventListener('click', function handleClick(event) {
         event.preventDefault();
-        console.log("clicked!");
         intakeFormEl.style.display = "block";
         bodyEl.style.background = "#d9d9d9";
         headerEl.style.display = "none";
@@ -58,7 +57,6 @@ var blog6 = document.querySelector("#blog6");
 
 blog1checkboxEl.addEventListener('change', function() {
     if(this.checked) {
-        console.log("checked");
         blog2checkboxEl.checked = false;
         blog3checkboxEl.checked = false;
         blog4checkboxEl.checked = false;
@@ -81,7 +79,6 @@ blog1checkboxEl.addEventListener('change', function() {
 });
 blog2checkboxEl.addEventListener('change', function() {
     if(this.checked) {
-        console.log("checked");
         blog1checkboxEl.checked = false;
         blog3checkboxEl.checked = false;
         blog4checkboxEl.checked = false;
@@ -94,7 +91,6 @@ blog2checkboxEl.addEventListener('change', function() {
         blog5.style.display = "none";
         blog6.style.display = "none";
     } else {
-        console.log("unchecked");
         blog1.style.display = "block";
         blog2.style.width = "46%";
         blog3.style.display = "block";
@@ -105,7 +101,6 @@ blog2checkboxEl.addEventListener('change', function() {
 });
 blog3checkboxEl.addEventListener('change', function() {
     if(this.checked) {
-        console.log("checked");
         blog1checkboxEl.checked = false;
         blog2checkboxEl.checked = false;
         blog4checkboxEl.checked = false;
@@ -128,7 +123,6 @@ blog3checkboxEl.addEventListener('change', function() {
 });
 blog4checkboxEl.addEventListener('change', function() {
     if(this.checked) {
-        console.log("checked");
         blog1checkboxEl.checked = false;
         blog2checkboxEl.checked = false;
         blog3checkboxEl.checked = false;
@@ -141,7 +135,6 @@ blog4checkboxEl.addEventListener('change', function() {
         blog5.style.display = "none";
         blog6.style.display = "none";
     } else {
-        console.log("unchecked");
         blog1.style.display = "block";
         blog2.style.display = "block";
         blog3.style.display = "block";
@@ -152,7 +145,6 @@ blog4checkboxEl.addEventListener('change', function() {
 });
 blog5checkboxEl.addEventListener('change', function() {
     if(this.checked) {
-        console.log("checked");
         blog1checkboxEl.checked = false;
         blog2checkboxEl.checked = false;
         blog3checkboxEl.checked = false;
@@ -175,7 +167,6 @@ blog5checkboxEl.addEventListener('change', function() {
 });
 blog6checkboxEl.addEventListener('change', function() {
     if(this.checked) {
-        console.log("checked");
         blog1checkboxEl.checked = false;
         blog2checkboxEl.checked = false;
         blog3checkboxEl.checked = false;
@@ -188,7 +179,6 @@ blog6checkboxEl.addEventListener('change', function() {
         blog5.style.display = "none";
         blog6.style.width = "96%";
     } else {
-        console.log("unchecked");
         blog1.style.display = "block";
         blog2.style.display = "block";
         blog3.style.display = "block";
