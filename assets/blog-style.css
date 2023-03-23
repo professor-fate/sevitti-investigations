@@ -23,8 +23,15 @@
     animation-name: fadeInOut;
     animation-duration: 500ms;
 }
+.blog-toggle:checked + .blog-entry h3 {
+    font-size: 2rem;
+}
+.blog-toggle:checked + .blog-entry h4 {
+    font-size: 1.6rem;
+}
 .blog-toggle:checked + .blog-entry p {
     display:block;
+    font-size: 1.5rem;
 }
 .blog p {
     display: none;
