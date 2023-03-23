@@ -15,12 +15,18 @@
 .blog-toggle {
     display: none;
 }
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 .blog-toggle:checked + .blog-entry {
-    width: 96%;
+    animation-name: fadeInOut;
+    animation-duration: 500ms;
 }
 .blog-toggle:checked + .blog-entry p {
     display:block;
 }
 .blog p {
     display: none;
+    transition: 400ms ease-in;
 }
