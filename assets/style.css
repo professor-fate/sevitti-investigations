@@ -276,7 +276,7 @@ nav {
     padding: 0 2%;
 }
 .association-logos {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -289,26 +289,13 @@ nav {
 .al img {
     width: 100%;
 }
-.case-counts {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-}
-.case-counts h2 {
-    font-size: 40px;
-}
-.case-counts div {
-    flex: 1;
-}
 /*Vanity Metrics End*/
 /*Who We Help*/
 .who-we-help {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 3%;
 }
 .who-we-help h2 {
     font-size: 1.8rem;
@@ -329,8 +316,8 @@ nav {
     text-align: center;
     margin: 0 0 1vw;
 }
-.who-we-help-cards div {
-    width: 20%;
+.who-we-help-cards article {
+    width: 22%;
     margin: 0 0 50px;
     line-height: 1.5;
     font-size: 1rem;
@@ -343,6 +330,12 @@ nav {
 .who-we-help img {
     width: 20%;
     margin: 0 10px;
+}
+.who-we-help-borders {
+    margin: 3% 0 0;
+    align-items: center;
+    height: 70%;
+    border: solid .1rem black;
 }
 /*Who We Help End*/
 /*Contact Us*/
@@ -516,7 +509,6 @@ footer {
     background-color: #d9d9d9;
     width: 100%;
     padding: 0 2.5% 2%;
-    color: #f77703;
 }
 .top-bottom {
     display: flex;
@@ -709,9 +701,6 @@ footer {
     .al {
         width: 40%;
     }
-    .case-counts div {
-        flex: 100%;
-    }
     .cp-capability {
         width: 45%;
         margin: 15px auto;
@@ -727,8 +716,11 @@ footer {
         width: 90%;
         left: 0%;
     }
-    .who-we-help-cards div {
+    .who-we-help-cards article {
         width: 80%;
+    }
+    .who-we-help-borders {
+        display: none;
     }
     .intake-form {
         width: 80%;
