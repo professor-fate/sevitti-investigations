@@ -180,6 +180,9 @@ nav {
 .hero-capabilities {
     background-image: url('./images/capabilitieshero_all_v1.png');
 }
+.hero-services {
+    background-image: url('./images/services-template-hero.jpg');
+}
 .hero-cta {
     color: white;
     width: 60%;
