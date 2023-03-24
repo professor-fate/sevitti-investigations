@@ -480,11 +480,10 @@ nav {
 }
 .faq-dropdown p {
     display: none;
-    color: white;
     margin: 0.5rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    background-color: #f77703;
+    border: 2px solid black;
 }
 .color-4 {
     background-color: #fee196;
