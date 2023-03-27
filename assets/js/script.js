@@ -20,10 +20,10 @@ contactUsButtonEl.forEach(contactForm => {
         mainEl.classList.toggle('active');
         footerEl.classList.toggle('active');
         intakeFormEl.style.display = "block";
-        headerEl.style.filter="blur(20px)";
-        navEl.style.filter="blur(20px)";
-        mainEl.style.filter="blur(20px)";
-        footerEl.style.filter="blur(20px)";
+        headerEl.style.filter="blur(10px)";
+        navEl.style.filter="blur(10px)";
+        mainEl.style.filter="blur(10px)";
+        footerEl.style.filter="blur(10px)";
     })
 })
 

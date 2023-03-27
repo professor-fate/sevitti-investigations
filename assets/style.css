@@ -182,36 +182,12 @@ nav {
     font-size: 30px;
     padding: 0 8px;
 }
-#header.active {
+#header.active, #nav.active, #main.active, #footer.active {
     pointer-events: none;
     user-select: none;
 }
-#nav.active {
-    pointer-events: none;
-    user-select: none;
-}
-#main.active {
-    pointer-events: none;
-    user-select: none;
-}
-#footer.active {
-    pointer-events: none;
-    user-select: none;
-}
-#header.inactive {
+#header.inactive, #nav.inactive, #main.inactive, #footer.inactive {
     pointer-events:auto;
-    user-select: auto;
-}
-#nav.inactive {
-    pointer-events: auto;
-    user-select: auto;
-}
-#main.inactive {
-    pointer-events: auto;
-    user-select: auto;
-}
-#footer.inactive {
-    pointer-events: auto;
     user-select: auto;
 }
 /*Intake Form End*/
@@ -551,6 +527,47 @@ nav {
     list-style-type: disc;
 }
 /*About Us Page Template Ends*/
+/* Blog Page */
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%
+}
+.blog-entry {
+    margin: 2%;
+    width: 46%;
+}
+.blog-entry img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+.blog-toggle {
+    display: none;
+}
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.blog-toggle:checked + .blog-entry {
+    animation-name: fadeInOut;
+    animation-duration: 500ms;
+}
+.blog-toggle:checked + .blog-entry h3 {
+    font-size: 2rem;
+}
+.blog-toggle:checked + .blog-entry h4 {
+    font-size: 1.6rem;
+}
+.blog-toggle:checked + .blog-entry p {
+    display:block;
+    font-size: 1.5rem;
+}
+.blog p {
+    display: none;
+    transition: 400ms ease-in;
+}
+/* Blog Page Ends*/
 /*Footer*/
 footer {
     background-color: #d9d9d9;
