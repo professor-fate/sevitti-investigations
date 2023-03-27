@@ -1,5 +1,6 @@
 //intake form buttons
 var contactUsButtonEl = document.querySelectorAll(".contact-form");
+var closeFormButtonEl = document.querySelector("#close-form");
 var submitIntakeFormEl = document.querySelectorAll("#submit-form");
 
 //DOM elements
@@ -14,13 +15,29 @@ var footerEl = document.querySelector("#footer");
 contactUsButtonEl.forEach(contactForm => {
     contactForm.addEventListener('click', function handleClick(event) {
         event.preventDefault();
+        headerEl.classList.toggle('active');
+        navEl.classList.toggle('active');
+        mainEl.classList.toggle('active');
+        footerEl.classList.toggle('active');
         intakeFormEl.style.display = "block";
-        bodyEl.style.background = "#d9d9d9";
-        headerEl.style.display = "none";
-        navEl.style.display = "none";
-        mainEl.style.display = "none";
-        footerEl.style.display = "none";
+        headerEl.style.filter="blur(20px)";
+        navEl.style.filter="blur(20px)";
+        mainEl.style.filter="blur(20px)";
+        footerEl.style.filter="blur(20px)";
     })
+})
+
+//close intake form
+closeFormButtonEl.addEventListener('click', function handleClick(event) {
+    intakeFormEl.style.display = "none";
+    headerEl.classList.toggle('inactive');
+    navEl.classList.toggle('inactive');
+    mainEl.classList.toggle('inactive');
+    footerEl.classList.toggle('inactive');
+    headerEl.style.filter="blur(0)";
+    navEl.style.filter="blur(0)";
+    mainEl.style.filter="blur(0)";
+    footerEl.style.filter="blur(0)";
 })
 
 //popup submit

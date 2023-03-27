@@ -125,22 +125,25 @@ nav {
 /*Nav End*/
 /*Intake Form*/
 .intake-form {
-    width: 600px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 1rem 25%;
+    width: 50%;
+    position: fixed;
+    top:0;
+    bottom: 0;
     text-align: center;
     color: #fff;
     background-color: #f77703;
     padding: 20px;
     display: none;
+    z-index: 9999999;
+    overflow-y: scroll;
 }
 .intake-form img {
     width: 50%;
     background-color: #fff;
     padding: 10px;
     border: #880808 solid 5px;
+    justify-content: center;
 }
 .intake-form form {
     text-align: left;
@@ -150,6 +153,7 @@ nav {
 }
 .intake-form h2 {
     font-size: 35px;
+    justify-content: center;
 }
 .intake-form label {
     margin: 15px 0 0;
@@ -163,12 +167,52 @@ nav {
     padding: 10px 10px 50px;
     font-size: 20px;
 }
-.intake-form button {
+.form-submit {
     padding: 20px;
     font-size: 30px;
     font-weight: bold;
     color: #fff;
     background-color: #880808;
+}
+.close-form {
+    right: 20px;
+    position: absolute;
+    color: #fff;
+    background-color: #880808;
+    font-size: 30px;
+    padding: 0 8px;
+}
+#header.active {
+    pointer-events: none;
+    user-select: none;
+}
+#nav.active {
+    pointer-events: none;
+    user-select: none;
+}
+#main.active {
+    pointer-events: none;
+    user-select: none;
+}
+#footer.active {
+    pointer-events: none;
+    user-select: none;
+}
+#header.inactive {
+    pointer-events:auto;
+    user-select: auto;
+}
+#nav.inactive {
+    pointer-events: auto;
+    user-select: auto;
+}
+#main.inactive {
+    pointer-events: auto;
+    user-select: auto;
+}
+#footer.inactive {
+    pointer-events: auto;
+    user-select: auto;
 }
 /*Intake Form End*/
 /*Hero*/
@@ -600,6 +644,7 @@ footer {
         margin: 0 2rem 2rem
     }
     .intake-form {
+        margin: 1rem 15%;
         width: 70%;
     }
     .contact-us-content button, .hero-cta-content button {
@@ -726,6 +771,7 @@ footer {
         display: none;
     }
     .intake-form {
+        margin: 1rem 10%;
         width: 80%;
     }
 }
@@ -822,8 +868,8 @@ footer {
         text-align: center;
     }
     .intake-form {
+        margin: 0;
         width: 100%;
-        top: 45%;
     }
 }
 /* Media Queries for mobile phones end */
