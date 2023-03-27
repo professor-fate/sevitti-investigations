@@ -182,14 +182,6 @@ nav {
     font-size: 30px;
     padding: 0 8px;
 }
-#header.active, #nav.active, #main.active, #footer.active {
-    pointer-events: none;
-    user-select: none;
-}
-#header.inactive, #nav.inactive, #main.inactive, #footer.inactive {
-    pointer-events:auto;
-    user-select: auto;
-}
 /*Intake Form End*/
 /*Hero*/
 .hero {
