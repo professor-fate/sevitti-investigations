@@ -225,8 +225,9 @@ nav {
     font-weight: bold;
 }
 .google-reviews {
-    margin-top: 1rem;
-    width: 60%;
+    /* margin-top: 1rem; */
+    margin: 1rem 15% 0;
+    width: 30%;
     border-style:solid;
 	border-color:#767676 #212121 #212121 #767676;
 	border-width:2px;
@@ -674,7 +675,8 @@ footer {
         width: 100%;
     }
     .google-reviews {
-        width: 100%;
+        margin: 1rem 25% 0;
+        width: 50%;
     }
 }
 /*Media Queries for smaller desktop screens end*/
