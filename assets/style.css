@@ -224,6 +224,18 @@ nav {
     font-size: 20px;
     font-weight: bold;
 }
+.google-reviews {
+    margin-top: 1rem;
+    width: 60%;
+    border-style:solid;
+	border-color:#767676 #212121 #212121 #767676;
+	border-width:2px;
+	background:#ccc;
+	color:#333;
+}
+.google-reviews:active {
+    border-color:#212121 #767676 #767676 #212121;
+}
 /*Hero End*/
 /*Capabilities*/
 .capabilities {
@@ -659,6 +671,9 @@ footer {
     .contact-us-content button, .hero-cta-content button {
         width: 100%;
     }
+    .google-reviews {
+        width: 100%;
+    }
 }
 /*Media Queries for smaller desktop screens end*/
 /*Media Queries for tablets*/
@@ -822,9 +837,6 @@ footer {
         padding: 0;
     }
     .hero-cta-content {
-        width: 100%;
-    }
-    .hero-cta button {
         width: 100%;
     }
     .capabilities {
