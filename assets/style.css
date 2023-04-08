@@ -313,6 +313,9 @@ nav {
     background-color: none;
     align-items: center;
 }
+.awards {
+    align-items: flex-start;
+}
 .al {
     width: 15%;
 }
@@ -578,7 +581,8 @@ nav {
 /* Blog Page Ends*/
 /*Footer*/
 footer {
-    background-color: #13100d;
+    background-color: black;
+    /* background-color: #13100d; */
     width: 100%;
     padding: 0 2.5% 2%;
     color: #fff;
