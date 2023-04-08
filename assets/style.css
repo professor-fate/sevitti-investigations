@@ -570,13 +570,15 @@ nav {
 .blog p {
     display: none;
     transition: 400ms ease-in;
+    margin-top: 2rem;
 }
 /* Blog Page Ends*/
 /*Footer*/
 footer {
-    background-color: #d9d9d9;
+    background-color: #13100d;
     width: 100%;
     padding: 0 2.5% 2%;
+    color: #fff;
 }
 .top-bottom {
     display: flex;
