@@ -11,6 +11,12 @@ var navEl = document.querySelector("#nav");
 var mainEl = document.querySelector("#main");
 var footerEl = document.querySelector("#footer");
 
+//low light image slider
+var container = document.querySelector('.before-after-container');
+document.querySelector('.slider').addEventListener('input', (e) => {
+    container.style.setProperty('--position', `${e.target.value}%`);
+})
+
 //popup intake form
 contactUsButtonEl.forEach(contactForm => {
     contactForm.addEventListener('click', function handleClick(event) {
