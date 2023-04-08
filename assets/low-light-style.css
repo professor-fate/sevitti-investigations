@@ -1,7 +1,3 @@
-img {
-    display: block;
-    max-width: 100%;
-}
 .before-after-container {
     display: grid;
     place-content: center;
