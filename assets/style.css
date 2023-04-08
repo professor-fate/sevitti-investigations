@@ -17,9 +17,11 @@ header {
     flex-wrap: wrap;
     color: #f77703;
     justify-content: space-between;
-    width: 99%;
+    width: 100%;
     align-items: center;
-    margin: 1vw;
+    padding: 1vw;
+    color: #fff;
+    background-color: black;
 }
 header div {
     width: 22%;
