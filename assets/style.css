@@ -108,6 +108,9 @@ nav {
     text-align: center!important;
     transform: translate(-50%, 0)!important;
 }
+.dropdown-content li {
+    border: 2px solid #f77703;
+}
 .dropdown-content a {
     padding: 0 .8rem;
     place-items: center;
@@ -144,11 +147,14 @@ nav {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.selected-page {
+    border-bottom: 2px white solid;
+}
 .dropdown:hover {
-    background-color: black;
+    border-bottom: 2px white solid;
 }
 .dropdown-content li:hover {
-    background-color: black;
+    border-bottom: 2px white solid;
 }
 .nav-contact-info {
     color:#f77703;
@@ -231,6 +237,7 @@ nav {
     background-image: url('./images/hero-image.jpg');
     background-size: cover;
     background-position: center;
+    text-shadow: 1px 1px black;
 }
 .hero-capabilities {
     background-image: url('./images/capabilitieshero_all_v1.png');
