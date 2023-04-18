@@ -612,19 +612,28 @@ nav {
     animation-duration: 500ms;
 }
 .blog-toggle:checked + .blog-entry h3 {
+    margin-left: 5%;
     font-size: 2rem;
 }
 .blog-toggle:checked + .blog-entry h4 {
+    margin: 1lh 0 0 5%;
     font-size: 1.6rem;
 }
-.blog-toggle:checked + .blog-entry p {
+.blog-toggle:checked + .blog-entry div {
     display:block;
     font-size: 1.5rem;
 }
-.blog p {
+.blog div {
     display: none;
     transition: 400ms ease-in;
     margin-top: 2rem;
+}
+.blog ul li {
+    list-style: disc;
+    margin: 0 0 1lh 2rem;
+}
+.blog p {
+    margin-bottom: 1lh;
 }
 /* Blog Page Ends*/
 /*Footer*/
