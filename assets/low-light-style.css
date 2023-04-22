@@ -1,7 +1,7 @@
 .before-after-container {
     display: grid;
     place-content: center;
-    margin: 0 2rem 2rem 0;
+    /* margin: 0 2rem 2rem 0; */
     position: relative;
     overflow: hidden;
     --position: 50%;
