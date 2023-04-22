@@ -980,14 +980,14 @@ footer {
         text-align: center;
     }
     footer div p {
-        margin: 5px 0;
+        margin: 20px 0;
     }
     .logo-footer {
         width: 30%;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     .fb-left {
-        margin: 0 auto;
+        margin: 20px auto;
     }
     .f-center, .f-right {
         width: 100%;
