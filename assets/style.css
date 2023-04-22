@@ -596,6 +596,7 @@ nav {
     width: 46%;
 }
 .blog-entry img {
+    aspect-ratio: 2/1;
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -623,6 +624,10 @@ nav {
     display:block;
     font-size: 1.5rem;
 }
+.blog h5 {
+    font-size: 1.5rem;
+    margin-bottom: .5lh;
+}
 .blog div {
     display: none;
     transition: 400ms ease-in;
@@ -632,8 +637,15 @@ nav {
     list-style: disc;
     margin: 0 0 1lh 2rem;
 }
+.blog ol li {
+    list-style: decimal;
+    margin: 0 0 1lh 2rem;
+}
 .blog p {
     margin-bottom: 1lh;
+}
+.blog a {
+    color: blue;
 }
 /* Blog Page Ends*/
 /*Footer*/
