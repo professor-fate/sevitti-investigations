@@ -6,10 +6,14 @@ image.addEventListener('click', function() {
     toggle = !toggle;
     if(toggle){
         image.style.transform = "scale(1)";
-        setTimeout(() => image.src = "./assets/images/capability-images/llandds-top.png", 1100);
+        image.src = "./assets/images/capability-images/llandds-top.png";
     } else {
+        image.style.transition = "2s";
         image.style.transform = "scale(4)";
-        setTimeout(() => image.src = "./assets/images/capability-images/llandds-bottom.png", 1100);
+        setTimeout(() => image.src = "./assets/images/capability-images/llandds-bottom.png", 1000);
+        setTimeout(() => image.style.transition = "0s", 1000);
+        setTimeout(() => image.style.transform = "scale(1)", 1000);
+        
     }
 })
 
