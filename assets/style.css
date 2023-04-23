@@ -234,17 +234,26 @@ nav {
 /*Intake Form End*/
 /*Hero*/
 .hero {
-    background-image: url('./images/hero-image.webp');
+    /* background-image: url('./images/hero-image.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     text-shadow: 1px 1px black;
+    position: relative;
 }
-.hero-capabilities {
+.hero-banner {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* .hero-capabilities {
     background-image: url('./images/capabilities-hero.webp');
 }
 .hero-services {
     background-image: url('./images/services-hero.webp');
-}
+} */
 .hero-cta {
     color: white;
     width: 60%;
@@ -943,15 +952,12 @@ footer {
     .dropdown-content a {
         padding: 10px;
     } */
-    .hero {
-        padding: 10%;
-    }
     .hero-cta {
         left: 0;
         text-align: center;
         width: 90%;
         margin: 0 auto;
-        padding: 0;
+        padding: 10%;
     }
     .hero-cta-content {
         width: 100%;
