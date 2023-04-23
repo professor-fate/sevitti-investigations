@@ -424,10 +424,19 @@ nav {
     justify-content: center;
     display: flex;
     padding: 6% 0;
-    background-image: url('./images/contactus-onpage-banner.webp');
+    position: relative;
+    /* background-image: url('./images/contactus-onpage-banner.webp');
     background-size: cover;
-    background-position: 0 55%;
+    background-position: 0 55%; */
     color: #fff;
+}
+.contact-us img {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .contact-us-content {
     position: relative;
