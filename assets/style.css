@@ -240,10 +240,10 @@ nav {
     text-shadow: 1px 1px black;
 }
 .hero-capabilities {
-    background-image: url('./images/capabilitieshero_all_v1.png');
+    background-image: url('./images/capabilities-hero.webp');
 }
 .hero-services {
-    background-image: url('./images/services-template-hero.jpg');
+    background-image: url('./images/services-hero.webp');
 }
 .hero-cta {
     color: white;
@@ -424,7 +424,7 @@ nav {
     justify-content: center;
     display: flex;
     padding: 6% 0;
-    background-image: url('./images/contactus-onpage-banner.png');
+    background-image: url('./images/contactus-onpage-banner.webp');
     background-size: cover;
     background-position: 0 55%;
     color: #fff;
@@ -745,17 +745,10 @@ footer {
         grid-template-columns: 1fr;
     }
     .st-service-image {
-        margin: 0 2rem;
         order: 1;
     }
-    .st-service-content {
+    .st-service-content, .st-benefits-content {
         margin: 2rem;
-    }
-    .st-benefits-content {
-        margin: 2rem;
-    }
-    .st-benefits-image {
-        margin: 0 2rem 2rem
     }
     .intake-form {
         margin: 1rem 15%;
