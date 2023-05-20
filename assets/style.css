@@ -24,9 +24,8 @@ header {
     background-color: black;
 }
 header div {
-    width: 22%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 header div a {
     display: flex;
@@ -49,7 +48,7 @@ header div ul li a img {
     width: 60%;
 }
 .hlogo img {
-    width: 70%;
+    width: 60%;
 }
 /*Header End*/
 /*Nav*/
@@ -612,6 +611,19 @@ nav {
 .text-page ul li {
     list-style-type: disc;
 }
+.text-page form {
+    margin: 0 20%;
+}
+.text-page form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text-page form input, .text-page form textarea, .text-page form button {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
 /*About Us Page Template Ends*/
 /* Blog Page */
 .blog {
@@ -811,7 +823,7 @@ footer {
         justify-content: space-between;
     }
     .hlogo img {
-        width: 100%;
+        width: 70%;
     } 
     nav {
         font-size: 1rem;
