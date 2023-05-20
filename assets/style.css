@@ -935,10 +935,21 @@ footer {
         flex-wrap: wrap;
     }
     .dropdown {
-        width: 33%;
+        width: 100%;
+        background-color: #f77703;
+        font-size: 2rem;
+        height: 5rem;
     }
     .dropdown a {
-        height: 1.7rem;
+        margin: 1.5rem 0;
+    }
+    .dropdown-content {
+        font-size: 1.5rem;
+        
+    }
+    .dropdown-content a {
+        padding: 1rem;
+        height: 3rem;
     }
     .nav-contact-info {
         text-shadow: 1px 1px black;
