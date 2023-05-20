@@ -63,6 +63,9 @@ nav {
     height: 1.8em;
     justify-content: space-between;
 }
+nav a {
+    cursor: pointer;
+}
 .nav-toggle {
     display: none;
 }
