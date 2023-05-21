@@ -11,6 +11,9 @@ body {
 a {
     color: inherit;
 }
+textarea {
+    resize: none;
+}
 /*Header*/
 header {
     display: flex;
