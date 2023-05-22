@@ -5,7 +5,7 @@ form {
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: relative;
     justify-content: space-between;
 }
@@ -14,7 +14,7 @@ form img {
     width: 5%;
 }
 form h3 {
-    margin: 2rem 0;
+    margin: 1rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,10 +53,10 @@ textarea {
     border-bottom: 1px solid black;
 }
 .client-info .middle {
-    height: 6rem;
+    height: 5rem;
 }
 .client-info .bottom {
-    height: 8rem;
+    height: 6rem;
 }
 .internal {
     margin-right: 2%;
@@ -86,18 +86,19 @@ textarea {
     grid-template-columns: 25% 75%;
 }
 .objectives {
-    margin: 0 2% 2rem;
+    margin: 0 2%;
     border: 1px solid black;
-    height: 50rem;
+    height: 34rem;
 }
 .objectives p {
     margin-bottom: 1rem;
 }
 .objectives textarea {
-    height: 43rem;
+    height: 29.8rem;
 }
 .payment-info {
     margin: 0 2% 2rem;
+    width: 96%;
     display: grid;
     grid-template-columns: 20% 80%;
 }
@@ -114,13 +115,24 @@ textarea {
 }
 .payment-info div {
     border: 1px solid black;
+    overflow: scroll;
+}
+.printout {
+    display: flex;
+    margin: 0 auto 1rem;
+}
+.printout h5 {
+    margin-right: 2rem;
 }
 .form-footer {
     border-top: 3px solid black;
     padding-top: 1rem;
-    margin: 0 3% 3rem;
+    margin: 0 3% 1rem;
     text-align: center;
 }
 .form-footer p {
-    font-size: 1.1rem;
+    font-size: .6rem;
+}
+@media print {
+    #header, #nav, .hero, .printout, #footer {display: none;}
 }
