@@ -62,17 +62,20 @@ closeFormButtonEl.addEventListener('click', function handleClick(event) {
 })
 
 //popup submit
-// submitIntakeFormEl.forEach(intakeForm => {
-//     intakeForm.addEventListener("click", function handleClick(event) {
-//         event.preventDefault();
-//         console.log("clicked");
-//         var name = document.getElementById("name").value
-//         console.log(name);
-//         var email = document.getElementById("email").value
-//         console.log(email);
-//         var phone = document.getElementById("phone").value
-//         console.log(phone);
-//         var message = document.getElementById("contact-message").value
-//         console.log(message);
-//     })
-// })
+submitIntakeFormEl.forEach(intakeForm => {
+    intakeForm.addEventListener("click", function handleClick(event) {
+        if(document.getElementById("name").value === "" || document.getElementById("name").value == null) {
+            event.preventDefault();
+            document.getElementsByName("name")[0].placeholder="*Your Name is required";
+        } else if(document.getElementById("email").value === "" || document.getElementById("email").value == null) {
+            event.preventDefault();
+            document.getElementsByName("email")[0].placeholder="*Your Email is required";
+        } else if(document.getElementById("phone").value === "" || document.getElementById("phone").value == null) {
+            event.preventDefault();
+            document.getElementsByName("phone")[0].placeholder="*Your Phone Number is required";
+        } else if(document.getElementById("contact-message").value === "" || document.getElementById("contact-message").value == null) {
+            event.preventDefault();
+            document.getElementsByName("contact-message")[0].placeholder="*Please tell us the services you require";
+        }
+    })
+})
