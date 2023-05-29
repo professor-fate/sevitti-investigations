@@ -236,6 +236,37 @@ nav a {
     font-size: 30px;
     padding: 0 8px;
 }
+.returntohomepage {
+    margin: 1rem 25%;
+    width: 50%;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #f77703;
+    padding: 20px;
+    z-index: 9999999;
+    overflow-y: scroll;
+}
+.returntohomepage img {
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border: #880808 solid 5px;
+    justify-content: center;
+}
+.returntohomepage h2 {
+    font-size: 35px;
+    justify-content: center;
+}
+.returntohomepage p {
+    margin-top: 20%;
+    font-size: 2rem;
+}
+.returntohomepage a {
+    color: blue;
+}
 /*Intake Form End*/
 /*Hero*/
 .hero {
