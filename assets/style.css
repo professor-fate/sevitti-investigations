@@ -261,6 +261,7 @@ nav a {
     justify-content: center;
 }
 .returntohomepage p {
+    line-height: 1.5;
     margin-top: 20%;
     font-size: 2rem;
 }
@@ -817,7 +818,7 @@ footer {
     .st-service-content, .st-benefits-content {
         margin: 2rem;
     }
-    .intake-form {
+    .intake-form, .returntohomepage {
         margin: 1rem 15%;
         width: 70%;
     }
@@ -957,7 +958,7 @@ footer {
     .who-we-help-borders {
         display: none;
     }
-    .intake-form {
+    .intake-form, .returntohomepage {
         margin: 1rem 10%;
         width: 80%;
     }
@@ -1074,7 +1075,7 @@ footer {
         width: 100%;
         text-align: center;
     }
-    .intake-form {
+    .intake-form, .returntohomepage {
         margin: 0;
         width: 100%;
     }
