@@ -67,15 +67,27 @@ submitIntakeFormEl.forEach(intakeForm => {
         if(document.getElementById("name").value === "" || document.getElementById("name").value == null) {
             event.preventDefault();
             document.getElementsByName("name")[0].placeholder="*Your Name is required";
-        } else if(document.getElementById("email").value === "" || document.getElementById("email").value == null) {
+        }
+        if(document.getElementById("email").value === "" || document.getElementById("email").value == null) {
             event.preventDefault();
             document.getElementsByName("email")[0].placeholder="*Your Email is required";
-        } else if(document.getElementById("phone").value === "" || document.getElementById("phone").value == null) {
+        } 
+        if(document.getElementById("phone").value === "" || document.getElementById("phone").value == null) {
             event.preventDefault();
             document.getElementsByName("phone")[0].placeholder="*Your Phone Number is required";
-        } else if(document.getElementById("contact-message").value === "" || document.getElementById("contact-message").value == null) {
+        } 
+        if(document.getElementById("contact-message").value === "" || document.getElementById("contact-message").value == null) {
             event.preventDefault();
             document.getElementsByName("contact-message")[0].placeholder="*Please tell us the services you require";
+        } else {
+            document.getElementById("intake-form").style["pointer-events"] = "none";
+            document.getElementById("submit-form").style.display = "none";
+            document.getElementById("loader").style.display = "block";
         }
     })
 })
+
+// function sendForm() {
+//     document.getElementById("submit-form").style.display = "none";
+//     document.getElementById("loader").style.display = "block";
+// }

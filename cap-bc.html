@@ -22,7 +22,8 @@
             <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
             <label for="contact-message">How may we help you?</label>
             <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+            <button type="submit" name="submit" id="submit-form" onclick="sendForm()" class="form-submit">Submit</button>
+            <div class="loader" id="loader"></div>
         </form>
     </section>
     <header id="header"> 
