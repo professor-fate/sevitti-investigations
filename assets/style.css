@@ -286,6 +286,10 @@ nav a {
 .contact-us-form {
     display: block;
     position: relative;
+    z-index: 0;
+}
+.disable-button {
+    display: none;
 }
 /*Intake Form End*/
 /*Hero*/

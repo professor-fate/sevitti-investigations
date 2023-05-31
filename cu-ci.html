@@ -9,23 +9,6 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body id="body">
-    <section class="intake-form" id="intake-form">
-        <img src="./assets/images/logo-sevitti-intake-form.webp">
-        <button type="close" id="close-form" class="close-form">X</button>
-        <h2>Let's Get In Touch</h2>
-        <form action="mail.php" method="POST">
-            <label for="name">Enter full name:</label>
-            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
-            <label for="email">Enter email address:</label>
-            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
-            <label for="phone">Enter a telephone number:</label>
-            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-            <label for="contact-message">How may we help you?</label>
-            <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
-            <div class="loader" id="loader"></div>
-        </form>
-    </section>
     <header id="header"> 
         <div class="hlogo">
             <a href="./index.html">
@@ -106,7 +89,7 @@
         </ul>
         <ul class="nav-contact-info">
             <li>
-                <a  class="contact-form">Book Your Free Consultation</a>
+                <a  href="#intake-form">Book Your Free Consultation</a>
             </li>
             <li class="phone">
                 <a href="tel:+19056644449">905-664-4449</a>
@@ -125,27 +108,28 @@
             </div>
             <img class="hero-banner" id="hero-banner" src="./assets/images/preload-hero-image.webp" alt="">
         </section>
-            <section class="intake-form contact-us-form" id="intake-form">
-                <img src="./assets/images/logo-sevitti-intake-form.webp">
-                <h2>Let's Get In Touch</h2>
-                <form action="mail.php" method="POST">
-                    <label for="name">Enter full name:</label>
-                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
-                    <label for="email">Enter email address:</label>
-                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
-                    <label for="phone">Enter a telephone number:</label>
-                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-                    <label for="contact-message">How may we help you?</label>
-                    <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-                    <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
-                    <div class="loader" id="loader"></div>
-                </form>
-            </section>
+        <section class="intake-form contact-us-form" id="intake-form">
+            <img src="./assets/images/logo-sevitti-intake-form.webp">
+            <button type="close" id="close-form" class="close-form disable-button">X</button>
+            <h2>Let's Get In Touch</h2>
+            <form action="mail.php" method="POST">
+                <label for="name">Enter full name:</label>
+                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                <label for="email">Enter email address:</label>
+                <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                <label for="phone">Enter a telephone number:</label>
+                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                <label for="contact-message">How may we help you?</label>
+                <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
+                <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+                <div class="loader" id="loader"></div>
+            </form>
+        </section>
         <section class="contact-us">
             <div class="contact-us-content">
                 <h2>Let's get to know each other</h2>
                 <p>Get in touch with the SI team today and tell us about your experience.</p>
-                <button class="contact-form">Contact Us</button>
+                <button class="contact-form disable-button">Contact Us</button>
             </div>
             <img loading="lazy" src="./assets/images/contactus-onpage-banner.webp">
         </section>
