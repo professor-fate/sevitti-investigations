@@ -22,7 +22,7 @@
             <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
             <label for="contact-message">How may we help you?</label>
             <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-            <button type="submit" name="submit" id="submit-form" onclick="sendForm()" class="form-submit">Submit</button>
+            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
             <div class="loader" id="loader"></div>
         </form>
     </section>
@@ -125,19 +125,22 @@
             </div>
             <img class="hero-banner" id="hero-banner" src="./assets/images/preload-hero-image.webp" alt="">
         </section>
-        <section class="text-page">
-            <form>
-                <label for="name">Enter full name:</label>
-                <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
-                <label for="email">Enter email address:</label>
-                <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
-                <label for="phone">Enter a telephone number:</label>
-                <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
-                <label for="contact-message">How may we help you?</label>
-                <textarea id="contact-message" placeholder="Description of services you require"></textarea>
-                <button type="submit" id="submit-form" class="form-submit">Submit</button>
-            </form>
-        </section>
+            <section class="intake-form contact-us-form" id="intake-form">
+                <img src="./assets/images/logo-sevitti-intake-form.webp">
+                <h2>Let's Get In Touch</h2>
+                <form action="mail.php" method="POST">
+                    <label for="name">Enter full name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                    <label for="phone">Enter a telephone number:</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                    <label for="contact-message">How may we help you?</label>
+                    <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
+                    <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+                    <div class="loader" id="loader"></div>
+                </form>
+            </section>
         <section class="contact-us">
             <div class="contact-us-content">
                 <h2>Let's get to know each other</h2>

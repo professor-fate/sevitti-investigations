@@ -102,15 +102,3 @@ heroImage.onload = function() {
         heroImage.src = "./assets/images/services-hero.webp";
     }
 }
-
-// heroImage.onload = function() {
-//     setTimeout(function() {
-//         if(heroImage.getAttribute('src') === './assets/images/preload-hero-image.webp'){
-//             console.log(true);
-//         } else {
-//             console.log(false);
-//         }
-//     }, 1000);
-
-// };
-

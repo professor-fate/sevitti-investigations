@@ -283,6 +283,10 @@ nav a {
 .returntohomepage a {
     color: blue;
 }
+.contact-us-form {
+    display: block;
+    position: relative;
+}
 /*Intake Form End*/
 /*Hero*/
 .hero {
