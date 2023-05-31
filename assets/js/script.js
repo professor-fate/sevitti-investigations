@@ -87,7 +87,30 @@ submitIntakeFormEl.forEach(intakeForm => {
     })
 })
 
-// function sendForm() {
-//     document.getElementById("submit-form").style.display = "none";
-//     document.getElementById("loader").style.display = "block";
-// }
+// load better hero images
+
+var heroImage = document.getElementById("hero-banner");
+
+heroImage.onload = function() {
+    if(heroImage.getAttribute('src') === './assets/images/preload-hero-image.webp'){
+        heroImage.src = "./assets/images/hero-image.webp";
+    }
+    if(heroImage.getAttribute('src') === './assets/images/preload-capabilities-hero.webp'){
+        heroImage.src = "./assets/images/capabilities-hero.webp";
+    }
+    if(heroImage.getAttribute('src') === './assets/images/preload-services-hero.webp'){
+        heroImage.src = "./assets/images/services-hero.webp";
+    }
+}
+
+// heroImage.onload = function() {
+//     setTimeout(function() {
+//         if(heroImage.getAttribute('src') === './assets/images/preload-hero-image.webp'){
+//             console.log(true);
+//         } else {
+//             console.log(false);
+//         }
+//     }, 1000);
+
+// };
+
