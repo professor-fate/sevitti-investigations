@@ -685,6 +685,11 @@ nav a {
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
 }
+.text-page img {
+    width: 40%;
+    margin: 4rem auto;
+    display: flex;
+}
 .customer-forms img {
     display: flex;
     margin: 2rem auto;

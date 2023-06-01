@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sevittiinvestigations</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/Favicon.webp">
+    <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body id="body">
+    <section class="intake-form" id="intake-form">
+        <img src="./assets/images/logo-sevitti-intake-form.webp">
+        <button type="close" id="close-form" class="close-form">X</button>
+        <h2>Let's Get In Touch</h2>
+        <form action="mail.php" method="POST">
+            <label for="name">Enter full name:</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+            <label for="email">Enter email address:</label>
+            <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+            <label for="phone">Enter a telephone number:</label>
+            <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+            <label for="contact-message">How may we help you?</label>
+            <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
+            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+            <div class="loader" id="loader"></div>
+        </form>
+    </section>
+    <header id="header"> 
+        <div class="hlogo">
+            <a href="./index.html">
+                <img src="./assets/images/logo-sevitti.webp" alt="" />
+            </a>
+        </div>
+        <div class="hpho">
+            <a href="tel:+19056644449">
+               <img class="ci-icon" src="./assets/images/icon-phone.webp">
+                <p class="contact-info-phone">
+                    1-905-664-4449
+                </p>
+            </a>
+        </div>
+        <div class="hsmi">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/SevittiInvestigations/" target="_blank"><img src="./assets/images/logo-facebook.webp" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://ca.linkedin.com/company/sevitti-investigations" target="_blank"><img src="./assets/images/logo-linkedin.webp" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav id="nav">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <ul class="nav-menu">
+            <li class="dropdown selected-page">
+                <a href="./index.html">Home</a>
+                <div></div>
+            </li>
+            <li class="dropdown">
+                <a>Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="./serv-b.html">Businesses</a></li>
+                    <li><a href="./serv-lf.html">Law Firms</a></li>
+                    <li><a href="./serv-i.html">Individuals</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./capabilities.html">Capabilities</a>
+                <ul class="dropdown-content">
+                    <li><a href="./cap-sandm.html">Surveillance and Monitoring</a></li>
+                    <li><a href="./cap-llandds.html">Low Light and Distance Solutions</a></li>
+                    <li><a href="./cap-dd.html">Due Diligence</a></li>
+                    <li><a href="./cap-ls.html">Locate Services</a></li>
+                    <li><a href="./cap-aandps.html">Asset and Property Searches</a></li>
+                    <li><a href="./cap-gpsm.html">GPS Monitoring</a></li>
+                    <li><a href="./cap-vcp.html">Valued Cargo Protection</a></li>
+                    <li><a href="./cap-bc.html">Background Checks</a></li>
+                    <li><a href="./cap-fandc.html">Family and Custody</a></li>
+                    <li><a href="./cap-ii.html">Infidelity Investigations</a></li>
+                    <li><a href="./cap-ps.html">Process Serving</a></li>
+                    <li><a href="./cap-co.html">Commissioner of Oaths</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Insights</a>
+                <ul class="dropdown-content">
+                    <li><a href="./ins-faq.html">FAQ</a></li>
+                    <li><a href="./ins-blog-index.html">Blog</a></li>
+                    <li><a href="./ins-au.html">About Us</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="./careers.html">Careers</a>
+            </li>
+            <li class="dropdown">
+                <a>Contact Us</a>
+                <ul class="dropdown-content">
+                    <li><a href="./cu-ci.html">Contact Info</a></li>
+                    <li><a href="./cu-if.html">Intake Forms</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav-contact-info">
+            <li>
+                <a  class="contact-form">Book Your Free Consultation</a>
+            </li>
+            <li class="phone">
+                <a href="tel:+19056644449">905-664-4449</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section class="hero">
+            <div class="hero-cta">
+                <div>
+                    <h1>Acknowledgment and thanks</h1>
+                </div>
+                <div class="hero-cta-content">
+                    <p></p>
+                </div>
+            </div>
+            <img class="hero-banner" id="hero-banner" src="./assets/images/preload-hero-image.webp" alt="">
+        </section>
+        <section class="text-page">
+            <h3>Land acknowledgement </h3>
+            <p>SI Agency acknowledges that the land on which we gather and live is situated upon the traditional territories of the Erie, Neutral, Huron-Wendat, Haudenosaunee and Mississaugas. This land is covered by the Dish With One Spoon Wampum Belt Covenant, which was an agreement between the Haudenosaunee and Anishinaabek to share and care for the resources around the Great Lakes. </p>
+            <h3>Web design</h3>
+            <p>Thank you to Eric Smith at <a href="http://professorfate.ca/" target="_blank">ProfessorFate</a> for helping to create this site</p>
+            <h3>Photography</h3>
+            <p>We thank the following photographers for contributing their photography to our site: 
+                <br>
+                <br>Yousif Haddadios 
+                <br>Vivek Trivedi 
+                <br>Rachel Woock 
+                <br>Oleksandr Pirdvalnyi 
+                <br>Marcelo Dias 
+                <br>Christina Morillo 
+                <br>Andrea Piacquadio 
+                <br>Lianhao qu 
+                <br>John Schnobrich 
+                <br>Gilles Lambart 
+                <br>Geojango maps 
+                <br>Etieene Beauregard 
+                <br>Breno Assis 
+                <br>Atharva Tulsi 
+                <br>Dan Cristian padure 
+            </p>
+
+            <img src="./assets/images/grant-acknowledgement.webp">
+        </section>
+        <section class="contact-us">
+            <div class="contact-us-content">
+                <h2>Let's get to know each other</h2>
+                <p>Get in touch with the SI team today and tell us about your experience.</p>
+                <button class="contact-form">Contact Us</button>
+            </div>
+            <img loading="lazy" src="./assets/images/contactus-onpage-banner.webp">
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="top-bottom footer-border">
+            <div class="logo-footer ft-left">
+                <p><a href="./index.html"><img src="./assets/images/logo-sevitti-footer.webp"></a></p>
+            </div>
+            <div class="f-center">
+                <p><a href="./capabilities.html">capabilities we offer</a></p>
+            </div>
+            <div class="f-right">
+                <p><a href="http://professorfate.ca/" target="_blank">Built by ProfessorFate</a></p>
+                <p><a href="./privacy-policy.html">Privacy Policy</a></p>
+                <p><a href="./acknowledgements.html">Acknowledgements</a></p>
+            </div> 
+        </div>
+        <div class="top-bottom">
+            <p class="fb-left"><a href=tel:+19056644449>905-664-4449</a></p>
+            <p class="f-center"><a href="mailto:info@sevittiinvestigations.ca">info@sevittiinvestigations.ca</a></p>
+            <p class="f-right"><a href="https://www.facebook.com/SevittiInvestigations/" target="_blank">Facebook</a> | <a href="https://ca.linkedin.com/company/sevitti-investigations" target="_blank">LinkedIn</a></p>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
