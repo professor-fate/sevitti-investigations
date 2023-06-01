@@ -925,6 +925,9 @@ footer {
     padding: 0 2.5% 2%;
     color: #fff;
 }
+footer p {
+    line-height: 1.5;
+}
 .top-bottom {
     display: flex;
     flex-wrap: wrap;
