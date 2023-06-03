@@ -42,9 +42,11 @@ closeFormButtonEl.addEventListener('click', function handleClick(event) {
     event.preventDefault();
     intakeFormEl.style.display = "none";
     headerEl.classList.toggle('inactive');
+    headerEl.classList.toggle('inactive');
     navEl.classList.toggle('inactive');
     mainEl.classList.toggle('inactive');
     footerEl.classList.toggle('inactive');
+    headerEl.style.filter="blur(0)";
     headerEl.style.filter="blur(0)";
     navEl.style.filter="blur(0)";
     mainEl.style.filter="blur(0)";
