@@ -342,6 +342,7 @@ nav a {
     padding: 15px 0;
     font-size: 20px;
     font-weight: bold;
+    -webkit-text-stroke: 1px black;
 }
 .google-reviews {
     /* margin-top: 1rem; */
@@ -526,6 +527,7 @@ nav a {
     padding: 15px 0;
     font-size: 1.5rem;
     font-weight: bold;
+    -webkit-text-stroke: 1px black;
 }
 /*Contact Us End*/
 /*Capabilities Page*/
