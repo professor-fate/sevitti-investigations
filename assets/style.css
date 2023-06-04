@@ -1283,5 +1283,8 @@ footer p {
         margin: 0;
         width: 100%;
     }
+    .form-selector button {
+        width: 80%;
+    }
 }
 /* Media Queries for mobile phones end */
