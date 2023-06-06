@@ -1187,7 +1187,7 @@ footer p {
     }
     .dropdown-content {
         font-size: 1.5rem;
-        
+        width: 100vw;
     }
     .dropdown-content a {
         padding: 1rem;
@@ -1283,7 +1283,14 @@ footer p {
         margin: 0;
         width: 100%;
     }
+    .form-selectors {
+        padding: 0;
+    }
+    .form-selector {
+        padding: 1rem 0;
+    }
     .form-selector button {
+        font-size: 1.5rem;
         width: 80%;
     }
 }
