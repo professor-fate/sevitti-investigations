@@ -192,6 +192,7 @@ nav a {
     display: none;
     z-index: 9999999;
     overflow-y: scroll;
+    border: black 1px solid;
 }
 .intake-form img {
     width: 50%;
