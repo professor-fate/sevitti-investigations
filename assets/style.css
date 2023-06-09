@@ -635,7 +635,7 @@ nav a {
 }
 .faq h2 {
     width: 100%;
-    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: white;
     padding: 1rem;
 }
@@ -712,6 +712,16 @@ nav a {
 }
 .form-selector {
     padding: 1rem;
+}
+.form-selector p {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin: 0 5% 1rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.spacer {
+    margin-bottom: 4rem;
 }
 .form-selector button {
     display: flex;
@@ -1307,6 +1317,9 @@ footer p {
     .form-selector button {
         font-size: 1.5rem;
         width: 80%;
+    }
+    .ifquery p {
+        font-size: 1.1rem;
     }
 }
 /* Media Queries for mobile phones end */
