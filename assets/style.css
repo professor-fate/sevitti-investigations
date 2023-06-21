@@ -700,6 +700,9 @@ nav a {
     margin: 4rem auto;
     display: flex;
 }
+.text-page a {
+    color: blue;
+}
 .customer-forms img {
     display: flex;
     margin: 2rem auto;
@@ -1105,7 +1108,7 @@ footer p {
         transition: opacity 250ms ease-in-out 350ms;
     }
     .nav-toggle-label {
-        margin-left: 1em;
+        margin: 1em;
         display: flex;
         align-items: center;
         z-index: 9999;
@@ -1191,6 +1194,9 @@ footer p {
         margin: 1rem 10%;
         width: 80%;
     }
+    .text-page img {
+        width: 80%;
+    }
 }
 /*Media Queries for tablets end*/
 /*Media Queries for mobile phones*/
@@ -1204,7 +1210,7 @@ footer p {
     .dropdown {
         width: 100%;
         background-color: #f77703;
-        font-size: 2rem;
+        font-size: 1.7rem;
         height: 5rem;
     }
     .dropdown a {
@@ -1223,7 +1229,7 @@ footer p {
         flex-direction: column;
         align-items: flex-end;
     }
-    .dropdown:nth-child(3) .dropdown-content {
+    .dropdown .dropdown-content {
         left: auto!important;
         right: 0!important;
         text-align: center!important;
@@ -1254,6 +1260,9 @@ footer p {
     }
     .hero-cta-content {
         width: 100%;
+    }
+    .hero h1 {
+        font-size: 2rem;
     }
     .capabilities {
         grid-template-columns: 1fr;
@@ -1321,5 +1330,34 @@ footer p {
     .ifquery p {
         font-size: 1.1rem;
     }
+    .text-page img {
+        width: 95%;
+    }
+    .contact-us h2 {
+        font-size: 2.2rem;
+    }
+    .st-benefits-content, .st-service-content{
+        margin: 0;
+    }
 }
 /* Media Queries for mobile phones end */
+/* Media Queries for smaller mobile phones */
+@media screen and (max-width: 365px) {
+    .nav-contact-info {
+        font-size: .9rem;
+    }
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+    .text-page h3 {
+        font-size: 1.5rem;
+    }
+    .text-page p {
+        font-size: 1.3rem;
+        margin: 1rem 0 0;
+    }
+    .text-page li {
+        font-size: 1.3rem;
+    }
+}
+/* Media Queries for smaller mobile phones end */
