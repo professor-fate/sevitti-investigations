@@ -9,7 +9,7 @@ if (isset($_POST["submit"])) {
     $headers = "From: ".$email;
     $txt = "From: ".$name.".\n\n".$message.".\n\n".$phone.".\n\n".$email; 
     
-    mail("Maria@sevittiinvestigations.ca", "Lead from Website", $txt, $headers)
+    mail("ericandrewsmith88@gmail.com", "Lead from Website", $txt, $headers)
     or die('
     <!DOCTYPE html>
     <html lang="en">
