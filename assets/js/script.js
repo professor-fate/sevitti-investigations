@@ -59,6 +59,8 @@ closeFormButtonEl.addEventListener('click', function handleClick(event) {
         navEl.style['user-select'] = 'auto';
         mainEl.style['user-select'] = 'auto';
         footerEl.style['user-select'] = 'auto';
+
+        location.reload();
 })
 
 //popup submit
