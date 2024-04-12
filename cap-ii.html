@@ -22,7 +22,8 @@
             <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
             <label for="contact-message">How may we help you?</label>
             <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAJhX3rV2wGFi1bY" data-callback="javascriptCallback"></div>
+            <button type="submit" name="submit" id="submit-form" class="form-submit" disabled>Submit</button>
             <div class="loader" id="loader"></div>
         </form>
     </section>
@@ -185,7 +186,8 @@
             <p class="f-center"><a href="mailto:info@sevittiinvestigations.ca">info@sevittiinvestigations.ca</a></p>
             <p class="f-right"><a href="https://www.facebook.com/SevittiInvestigations/" target="_blank">Facebook</a> | <a href="https://ca.linkedin.com/company/sevitti-investigations" target="_blank">LinkedIn</a></p>
         </div>
-    </footer> 
+    </footer>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

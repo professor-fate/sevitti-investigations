@@ -22,7 +22,8 @@
             <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
             <label for="contact-message">How may we help you?</label>
             <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAJhX3rV2wGFi1bY" data-callback="javascriptCallback"></div>
+            <button type="submit" name="submit" id="submit-form" class="form-submit" disabled>Submit</button>
             <div class="loader" id="loader"></div>
         </form>
     </section>
@@ -136,21 +137,21 @@
                 <p>When you need a sworn declaration affirming something to be true, you’ll need to do it in front of a commissioner of oaths. A Commissioner of Oaths is someone authorized by the Province of Ontario to witness specific sworn declarations.
                     <br>
                     <br>
-                    Sevitti Investigations has a sworn “commissioner of oaths” on staff to help. We offer professional, affordable, and convenient service in the Hamilton, Niagara, and Toronto areas. We can help you with affidavits of service and documents related to private investigations or the security industry.
+                    Sevitti Investigations has several sworn Commissioners of Oaths on staff to help for a flat fee of $25 for affidavits of services or documents related to private investigations. We offer professional, affordable, and convenient service in the Hamilton, Niagara, and Toronto areas.
                 </p>
             </div>
         </section>
         <section class="st-benefits">
             <div class="st-benefits-content">
                 <h3>Administering oaths for specific documents</h3>
-                <p>Sevitti Investigations has a licensed Commissioner of Oaths authorized to verify affidavits of service and documents related to the private investigation and security industry. 
+                <p>Our team has several licensed Commissioners of Oaths authorized to verify affidavits of service and documents related to the private investigation and security industry. 
                     <br>
                     <br>
-                    If you require a Commissioner of Oaths to verify your documents, please call or email to book a meeting so we can confirm your documents are within our power to verify.
+                    If you require a Commissioner of Oaths to verify your documents, please call or email to book a meeting so we can confirm your documents are within our power to verify. We charge a simple $25 fee for the following documents:
                 </p>
                 <ul>
                     <li>Affidavits of service - statements in writing and signed under oath</li>
-                    <li>Documents related to the private investigation and security industries</li>
+                    <li>Documents related to the private investigation and security industry</li>
                 </ul>
             </div>
             <div class="st-benefits-image">
@@ -185,7 +186,8 @@
             <p class="f-center"><a href="mailto:info@sevittiinvestigations.ca">info@sevittiinvestigations.ca</a></p>
             <p class="f-right"><a href="https://www.facebook.com/SevittiInvestigations/" target="_blank">Facebook</a> | <a href="https://ca.linkedin.com/company/sevitti-investigations" target="_blank">LinkedIn</a></p>
         </div>
-    </footer> 
+    </footer>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

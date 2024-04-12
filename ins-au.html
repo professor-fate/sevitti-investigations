@@ -22,7 +22,8 @@
             <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
             <label for="contact-message">How may we help you?</label>
             <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-            <button type="submit" name="submit" id="submit-form" class="form-submit">Submit</button>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAAJhX3rV2wGFi1bY" data-callback="javascriptCallback"></div>
+            <button type="submit" name="submit" id="submit-form" class="form-submit" disabled>Submit</button>
             <div class="loader" id="loader"></div>
         </form>
     </section>
@@ -169,7 +170,7 @@
         </section>
         <section class="vanity-metrics">
             <div class="association-logos">
-                <div class="al"><a href="https://www.cpiontario.ca/" target="_blank"><img loading="lazy" src="./assets/images/associations-and-awards/CPIOLogo.webp" alt="council of professional investigators ontario" /></a></div>
+                <!-- <div class="al"><a href="https://www.cpiontario.ca/" target="_blank"><img loading="lazy" src="./assets/images/associations-and-awards/CPIOLogo.webp" alt="council of professional investigators ontario" /></a></div> -->
                 <div class="al"><a href="https://www.facebook.com/oldetownstoneycreek/" target="_blank"><img loading="lazy" src="./assets/images/associations-and-awards/OldeTownMerhantAssociation2.webp" alt="the friends of olde town stoney creek" /></a></div>
                 <div class="al"><a href="https://business.chamberstoneycreek.com/directory/Details/sevitti-investigations-1810627" target="_blank"><img loading="lazy" src="./assets/images/associations-and-awards/SC_Asocc_1.webp" alt="stoney creek chamber of commerce" /></a></div>
                 <div class="al"><a href="https://www.cpirc.com/investigators-in-canada/" target="_blank"><img loading="lazy" src="./assets/images/associations-and-awards/CPIRC_Logo.webp" alt="canadian private investigators resource center"></a></div>
@@ -204,6 +205,7 @@
             <p class="f-right"><a href="https://www.facebook.com/SevittiInvestigations/" target="_blank">Facebook</a> | <a href="https://ca.linkedin.com/company/sevitti-investigations" target="_blank">LinkedIn</a></p>
         </div>
     </footer> 
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

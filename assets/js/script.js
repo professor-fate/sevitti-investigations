@@ -63,6 +63,8 @@ closeFormButtonEl.addEventListener('click', function handleClick(event) {
         location.reload();
 })
 
+//if turnstile token is received, activate submit button and change it's color to #880808
+
 //popup submit
 submitIntakeFormEl.forEach(intakeForm => {
     intakeForm.addEventListener("click", function handleClick(event) {
