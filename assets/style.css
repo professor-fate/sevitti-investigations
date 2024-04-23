@@ -250,7 +250,7 @@ nav a {
     100% { transform: rotate(360deg); }
   }
 .close-form {
-    right: 20px;
+    right: 0px;
     position: absolute;
     color: #fff;
     background-color: #880808;
@@ -891,6 +891,10 @@ nav a {
 }
 @media print {
     #header, #nav, .hero, .printout, #footer {display: none;}
+}
+.inPDF {
+    width: 100%;
+    height: 100vh;
 }
 /*About Us Page Template Ends*/
 /* Blog Page */
