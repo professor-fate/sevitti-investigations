@@ -25,15 +25,15 @@ header {
     padding: 1vw;
     color: #fff;
     background-color: black;
-}
-header div {
-    display: flex;
-    justify-content: center;
-}
-header div a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    div a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 header div a img {
     width: 15%;
