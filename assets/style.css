@@ -229,8 +229,8 @@ nav {
         font-size: 30px;
         font-weight: bold;
         color: #fff;
-        /* background-color: #880808; */
-        background-color: darkgray;
+        background-color: #880808;
+        /* background-color: darkgray; */
         cursor: pointer;
     }
     .loader {

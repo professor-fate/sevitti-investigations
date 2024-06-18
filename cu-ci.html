@@ -121,8 +121,8 @@
                 <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
                 <label for="contact-message">How may we help you?</label>
                 <textarea id="contact-message" name="contact-message" placeholder="Description of services you require"></textarea>
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAAAJhX3rV2wGFi1bY" data-callback="javascriptCallback"></div>
-                <button type="submit" name="submit" id="submit-form" class="form-submit" disabled>Submit</button>
+                <!-- <div class="cf-turnstile" data-sitekey="0x4AAAAAAAJhX3rV2wGFi1bY" data-callback="javascriptCallback"></div> -->
+                <button type="submit" name="submit" id="submit-form" class="form-submit" >Submit</button>
                 <div class="loader" id="loader"></div>
             </form>
         </section>
@@ -147,7 +147,35 @@
             <p class="f-right"><a href="https://www.facebook.com/SevittiInvestigations/" target="_blank">Facebook</a> | <a href="https://ca.linkedin.com/company/sevitti-investigations" target="_blank">LinkedIn</a></p>
         </div>
     </footer>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+    <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script> -->
     <script src="./assets/js/script.js"></script>
+    <script>
+        var submitIntakeFormEl = document.querySelectorAll("#submit-form");
+
+        submitIntakeFormEl.forEach(intakeForm => {
+            intakeForm.addEventListener("click", function handleClick(event) {
+                if(document.getElementById("name").value === "" || document.getElementById("name").value == null) {
+                    event.preventDefault();
+                    document.getElementsByName("name")[0].placeholder="*Your Name is required";
+                }
+                if(document.getElementById("email").value === "" || document.getElementById("email").value == null) {
+                    event.preventDefault();
+                    document.getElementsByName("email")[0].placeholder="*Your Email is required";
+                } 
+                if(document.getElementById("phone").value === "" || document.getElementById("phone").value == null) {
+                    event.preventDefault();
+                    document.getElementsByName("phone")[0].placeholder="*Your Phone Number is required";
+                } 
+                if(document.getElementById("contact-message").value === "" || document.getElementById("contact-message").value == null) {
+                    event.preventDefault();
+                    document.getElementsByName("contact-message")[0].placeholder="*Please tell us the services you require";
+                } else {
+                    document.getElementById("intake-form").style["pointer-events"] = "none";
+                    document.getElementById("submit-form").style.display = "none";
+                    document.getElementById("loader").style.display = "block";
+                }
+            })
+        })
+    </script>
 </body>
 </html>
